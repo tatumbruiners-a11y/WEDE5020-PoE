@@ -9,7 +9,7 @@ Project Overview
 
 This project focuses on the design and development of a functional and user-friendly website for the Society for the Prevention of Cruelty to Animals (SPCA). The website aims to provide users with clear information about the organisation, as well as allow them to take action through adoption, donations and reporting animal cruelty.
 
-The website has been developed using HTML as part of Part 1 of the project and follows a structured layout with multiple interconnected web pages. 
+The website has been developed using HTML and managed through GitHub as part of Part 1 of the project and follows a structured layout with multiple interconnected web pages. 
 
 Website Goals and Objectives
 
@@ -45,8 +45,10 @@ Navigation menu available across all pages
 Header and footer implemented consistently across the website
 
 Sitemap
+![sitemap](images/sitemap.png)
 
 Timeline and Milestones
+![timeline](images/timeline.png)
 
 Changelog
 
