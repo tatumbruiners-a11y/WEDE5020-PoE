@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPCA | Home</title>
+    <title>SPCA South Africa | Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- Header -->
     <header>
-        <img src="images/spca-logo.png" alt="SPCA Logo" width="120">
+        <img src="images/spca-logo.png" alt="SPCA logo">
+        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,75 +23,93 @@
         </nav>
     </header>
 
+    <!-- Main Page -->
     <main>
-        <!-- Large Wireframe Top Box -->
-        <div class="hero-banner-box">
-            <p>[ Large Homepage Image Banner Placeholder ]</p>
+        <img src="images/hero-image.jpg" alt="SPCA Animals" class="hp-hero-image">
+
+        <h1 class="hp-main-title">The Society for the Prevention of Cruelty to Animals (SPCA)</h1>
+
+        <!-- Brief Introduction -->
+        <div class="interactive-popup-card">
+            <p class="hp-intro-text">
+                The SPCA is a non-profit organisation dedicated to rescuing, caring and protecting animals. Our aim is to educate the public on responsible pet ownership, give a second chance to animals in need and provide them with safe homes.
+            </p>
         </div>
 
-        <h2>Heading</h2>
-
-        <div class="intro-container">
-            <h3>INTRODUCTION (Summary)</h3>
-            <p>The SPCA (Society of the Prevention of Cruelty to Animals) is a non-profit organisation that rescues, cares for, and protects animals. We dedicate our efforts to educating the public on responsible pet ownership, giving a vital second chance to animals in need, and ensuring they are provided with safe, permanent homes.</p>
+        <!-- Call to Action -->
+        <div class="hp-cta-section">
+            <table width="100%" cellspacing="15">
+                <tr>
+                    <td width="33%">
+                        <a href="services.html" class="hp-cta-box hp-btn-adopt">Adopt a Pet</a>
+                    </td>
+                    <td width="33%">
+                        <a href="services.html" class="hp-cta-box hp-btn-donate">Donate Now</a>
+                    </td>
+                    <td width="33%">
+                        <a href="services.html" class="hp-cta-box hp-btn-report">Report Abuse</a>
+                    </td>
+                </tr>
+            </table>
         </div>
-
-        <!-- Call to Actions Row -->
-        <table width="100%">
-            <tr>
-                <td width="33%"><a href="services.html" class="cta-button btn-adoption">Adopt a Pet</a></td>
-                <td width="33%"><a href="services.html" class="cta-button btn-donation">Donate Now</a></td>
-                <td width="33%"><a href="services.html" class="cta-button btn-report">Report Abuse</a></td>
-            </tr>
-        </table>
 
         <hr>
 
-        <h2>FEATURED PETS (3x Grid)</h2>
-        <div class="gray-section-container">
-            <table width="100%" cellspacing="15">
+        <h2 class="hp-subheading">Who We Help</h2>
+        <p class="hp-sub-text">The SPCA works with a diverse range of animals across different environments:</p>
+
+        <div class="hp-images-container">
+            <table width="100%" cellspacing="10">
                 <tr>
-                    <td width="33%" valign="top">
-                        <div class="white-card-box">
-                            <img src="images/domestic.png" alt="Domestic Pets">
-                            <h3>Domestic pets</h3>
-                            <p>We work closely with household domestic pets including cats and dogs.</p>
-                        </div>
+                    <td width="33%">
+                        <img src="images/pets.jpg" alt="Domestic Pets" class="hp-grid-img">
                     </td>
-                    <td width="33%" valign="top">
-                        <div class="white-card-box">
-                            <img src="images/farm.png" alt="Farm Animals">
-                            <h3>Farm animals</h3>
-                            <p>Our units rescue and care for farm animals such as cattle, goats, sheep, pigs, and horses.</p>
-                        </div>
+                    <td width="33%">
+                        <img src="images/sheep.jpg" alt="Farm Animals" class="hp-grid-img">
                     </td>
-                    <td width="33%" valign="top">
-                        <div class="white-card-box">
-                            <img src="images/wildlife.png" alt="Various Wildlife Species">
-                            <h3>Various wildlife species</h3>
-                            <p>We handle various wildlife species including bats, baboons, rabbits, raptors, porcupines, pigeons, seals, and snakes.</p>
-                        </div>
+                    <td width="33%">
+                        <img src="images/wild.jpg" alt="Wildlife Species" class="hp-grid-img">
                     </td>
+                </tr>
+                <tr>
+                    <td><p class="hp-label-text">Domestic Pets</p></td>
+                    <td><p class="hp-label-text">Farm Animals</p></td>
+                    <td><p class="hp-label-text">Wildlife Species</p></td>
                 </tr>
             </table>
         </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer-column">
-            <ul>
-                <li>Instagram - @capespca</li>
-                <li>Facebook - @NSPCA</li>
-            </ul>
+            <div class="footer-social-row">
+                <img src="images/instagram.png" alt="Instagram" width="20">@capespca
+            </div>
+            <div class="footer-social-row">
+                <img src="images/facebook.png" alt="Facebook" width="20">@NSPCA
+            </div>
         </div>
+        
         <div class="footer-column">
-            <p>SIMPLE LINKS</p>
-            <p>Terms, Privacy, Copyright &copy; 2026</p>
+            <p>&copy; 2026 SPCA South Africa. All Rights Reserved.</p>
         </div>
+        
         <div class="footer-column">
-            <h4>EMERGENCY CONTACT</h4>
-            <p>Local: 021 700 4140</p>
-            <p>National: 011 907 3590</p>
+            <h4><strong>Emergency contact</strong></h4>
+            <table class="footer-emergency-table">
+                <tr>
+                    <td>
+                        <img src="images/telephone.png" alt="Emergency" width="40">
+                    </td>
+                    <td>
+                        <ul class="footer-numbers-list">
+                            <li>Local: 021 700 4140</li>
+                            <li>National: 011 907 3590</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
         </div>
     </footer>
 
