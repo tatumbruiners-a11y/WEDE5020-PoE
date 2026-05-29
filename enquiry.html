@@ -6,7 +6,6 @@
     <title>SPCA Enquiry</title>
 </head>
 <body>
-    <!--HEADER-->
     <header>
         <img src="images/spca-logo.png" alt="SPCA logo" width="100">
         
@@ -21,66 +20,77 @@
         </nav>
     </header>
 
-    <!--ENQUIRY FORM-->
     <main>
         <h1>Enquiry Form</h1>
         <section>
             <p><strong>Instructions:</strong> Please fill out the form below for adoption applications, donations and reporting cruelty. For information on <strong>Volunteering or Sponsorship</strong>, please select the options below.</p>
         </section>
-        <form action="#" method="post">
-            <p>
-                <label for="full-name">Full Name:</label><br>
-                <input type="text" id="full-name" name="full-name" required>
-            </p>
-            <p>
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required>
-            </p>
-            <p>
-                <label for="enquiry-type">Type of Enquiry:</label><br>
-                <select id="enquiry-type" name="enquiry-type">
-                    <option value="adoption">Adoption</option>
-                    <option value="donation">Donation</option>
-                    <option value="report">Report Cruelty</option>
-                    <option value="volunteer">Volunteer</option>
-                    <option value="sponsor">Sponsor</option>
-                </select>
-            </p>
-            <p>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" cols="30" placeholder="Provide details here..."></textarea>
-            </p>
-            <p><input type="submit" value="SUBMIT ENQUIRY"></p>
-        </form>
+        
+        <div class="form-container">
+            <form action="#" method="post">
+                
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="enquiry-type">Type of Enquiry:</label>
+                    <select id="enquiry-type" name="enquiry-type">
+                        <option value="adoption">Adoption</option>
+                        <option value="donation">Donation</option>
+                        <option value="report">Report Cruelty</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="sponsor">Sponsor</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" cols="30" placeholder="Provide details here..."></textarea>
+                </div>
+                
+                <div class="form-submit">
+                    <input type="submit" value="SUBMIT ENQUIRY">
+                </div>
+                
+            </form>
+        </div>
     </main>
 
-    <!--FOOTER-->
     <footer>
-        <section>
-            <ul>
-                <li><img src="images/facebook.png" alt="Facebook icon" width="20">@NSPCA</li>
-                <li><img src="images/instagram.png" alt="Instagram icon" width="20">@capespca</li>
-            </ul>
-        </section>
-        <section>
-            <p>&copy; 2026 SPCA South Africa. All Rights Reserved</p>
-        </section>
-        <section>
-            <h4>Emergency Contact</h4>
-            <table>
-                <tr>
-                    <td>
-                        <img src="images/telephone.png" alt="Emergency call icon" width="60">
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Local: 021 700 4140</li>
-                            <li>National: 011 907 3590</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </section>
+        <div class="footer-container">
+            <section>
+                <ul>
+                    <li><img src="images/facebook.png" alt="Facebook icon" width="20">@NSPCA</li>
+                    <li><img src="images/instagram.png" alt="Instagram icon" width="20">@capespca</li>
+                </ul>
+            </section>
+            <section>
+                <p>&copy; 2026 SPCA South Africa. All Rights Reserved</p>
+            </section>
+            <section>
+                <h4>Emergency Contact</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/telephone.png" alt="Emergency call icon" width="60">
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Local: 021 700 4140</li>
+                                <li>National: 011 907 3590</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
     </footer>
 
 </body>
