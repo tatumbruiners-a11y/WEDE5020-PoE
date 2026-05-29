@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPCA | Services</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>SPCA South Africa | Our Services</title>
+    <link class="styles" rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- Header -->
     <header>
-        <img src="images/spca-logo.png" alt="SPCA Logo" width="120">
+        <img src="images/spca-logo.png" alt="SPCA logo">
+        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,71 +23,83 @@
         </nav>
     </header>
 
+    <!-- Services -->
     <main>
-        <h2>SERVICES MENU</h2>
-        <p style="text-align: center; font-style: italic; font-weight: bold; margin-bottom: 20px;">
-            ALL SECTIONS LINK TO MORE DETAILED INFORMATION BELOW
+        <h1 class="sv-main-title">Our Services</h1>
+        <p class="sv-intro-p">
+            The SPCA offers a wide range of services to protect animals and support the community. Select a service below to take action.
         </p>
 
-        <!-- Shaded Wireframe Card Menu Structure -->
-        <div class="gray-section-container">
-            <table width="100%" cellspacing="15">
+        <table width="100%" cellspacing="20" cellpadding="0" style="table-layout: fixed;">
+            <tr>
+                <td width="33.33%" valign="top">
+                    <a href="enquiry.html" class="sv-action-link">
+                        <div class="sv-action-card sv-block-blue">
+                            <img src="images/adoption.png" alt="Adoption icon">
+                            <h2>Adoption</h2>
+                            <p class="sv-card-description">
+                                For responsible individuals (18+) looking for a long-term commitment. We provide animals with safe and loving homes.
+                            </p>
+                            <span class="sv-interactive-trigger">Fill out Adoption Form</span>
+                        </div>
+                    </a>
+                </td>
+
+                <td width="33.33%" valign="top">
+                    <a href="enquiry.html" class="sv-action-link">
+                        <div class="sv-action-card sv-block-green">
+                            <img src="images/donate.png" alt="Donations icon">
+                            <h2>Donations</h2>
+                            <p class="sv-card-description">
+                                As a non-profit, we rely on your support to cover costs for food, blankets, surgeries and maintenance of shelters.
+                            </p>
+                            <span class="sv-interactive-trigger">Support our Mission</span>
+                        </div>
+                    </a>
+                </td>
+
+                <td width="33.33%" valign="top">
+                    <a href="enquiry.html" class="sv-action-link">
+                        <div class="sv-action-card sv-block-red">
+                            <img src="images/rescue.png" alt="Rescue icon">
+                            <h2>Report</h2>
+                            <p class="sv-card-description">
+                                Any person who finds stray animals or witnesses animal abuse, neglect or endangerment, please reach out to help save the lives of animals.
+                            </p>
+                            <span class="sv-interactive-trigger">Report an Incident</span>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-column">
+            <div class="footer-social-row">
+                <img src="images/instagram.png" alt="Instagram" width="20">@capespca
+            </div>
+            <div class="footer-social-row">
+                <img src="images/facebook.png" alt="Facebook" width="20">@NSPCA
+            </div>
+        </div>
+        <div class="footer-column">
+            <p>&copy; 2026 SPCA South Africa. All Rights Reserved.</p>
+        </div>
+        <div class="footer-column">
+            <h4><strong>Emergency contact</strong></h4>
+            <table class="footer-emergency-table">
                 <tr>
-                    <td width="33%" valign="top">
-                        <div class="white-card-box" style="text-align: center;">
-                            <div style="height:80px; background:#D1D5DB; margin-bottom:10px;"></div>
-                            <strong>ADOPTION</strong>
-                            <p><small>View Adoptable Pets</small></p>
-                        </div>
-                    </td>
-                    <td width="33%" valign="top">
-                        <div class="white-card-box" style="text-align: center;">
-                            <div style="height:80px; background:#D1D5DB; margin-bottom:10px;"></div>
-                            <strong>DONATIONS</strong>
-                            <p><small>Complete Donation Form</small></p>
-                        </div>
-                    </td>
-                    <td width="33%" valign="top">
-                        <div class="white-card-box" style="text-align: center;">
-                            <div style="height:80px; background:#D1D5DB; margin-bottom:10px;"></div>
-                            <strong>RESCUE</strong>
-                            <p><small>Request Rescue Service</small></p>
-                        </div>
+                    <td><img src="images/telephone.png" alt="Emergency" width="40"></td>
+                    <td>
+                        <ul class="footer-numbers-list">
+                            <li>Local: 021 700 4140</li>
+                            <li>National: 011 907 3590</li>
+                        </ul>
                     </td>
                 </tr>
             </table>
-        </div>
-
-        <hr>
-
-        <!-- Detailed Step Paragraph Layout Content -->
-        <h3>Detailed Service Actions</h3>
-        
-        <h4>1. Adoption Process</h4>
-        <p>Our adoption services are tailored for responsible individuals aged 18 or older who are looking for a true long-term commitment to providing animals with safe and loving homes. To pursue this action, you must first meet the animal in person, complete an application form containing your ID and proof of residence, follow a scheduled home inspection, and once everything is officially approved, sign your contract and collect your new pet.</p>
-
-        <h4>2. Donations Program</h4>
-        <p>Donations are open to anyone and directly cover the operational costs of food, blankets, life-saving surgeries, and general maintenance of our shelter sites. To pursue this action, you select your desired method of payment and specify where the money should flow towards, such as kennels or surgeries. If you have any physical items you are willing to donate such as clothes or toys, please drop them off directly at your nearest branch.</p>
-
-        <h4>3. Reports Department</h4>
-        <p>Reports can be generated by any person who witnesses animal abuse, neglect, endangerment, or encounters stray animals, helping us directly save the lives of animals. To pursue this action, locate your nearest branch and safely document the scene with photos or videos, making sure to add the exact time and address. Contact the local or national branch for immediate emergencies, or send an email for non-urgent records. You can report completely confidentially and provide a formal written statement.</p>
-    </main>
-
-    <footer>
-        <div class="footer-column">
-            <ul>
-                <li>Instagram - @capespca</li>
-                <li>Facebook - @NSPCA</li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <p>SIMPLE LINKS</p>
-            <p>Terms, Privacy, Copyright &copy; 2026</p>
-        </div>
-        <div class="footer-column">
-            <h4>EMERGENCY CONTACT</h4>
-            <p>Local: 021 700 4140</p>
-            <p>National: 011 907 3590</p>
         </div>
     </footer>
 
