@@ -1,0 +1,231 @@
+/* ==========================================================================
+   1. Core Layout Settings
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: #F0F4F8; /* Subtle light blue canvas tint */
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #D1D5DB;
+  margin: 25px 0;
+}
+
+/* Typography Scales */
+h1 { font-size: 32px; color: #1d2c59; margin-bottom: 15px; }
+h2 { font-size: 24px; color: #1d2c59; margin-bottom: 15px; text-align: center; }
+h3 { font-size: 18px; color: #1d2c59; margin-bottom: 10px; }
+p, li { font-size: 16px; line-height: 1.6; margin-bottom: 10px; }
+
+/* ==========================================================================
+   2. Header & Navigation (Slim top bar, right-aligned links)
+   ========================================================================== */
+header {
+  background-color: #FFFFFF;
+  padding: 15px 40px;
+  border-bottom: 3px solid #1d2c59;
+}
+
+header img {
+  float: left;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #1d2c59;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #8ebc46;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ==========================================================================
+   3. Large Content Blocks & Image Containers
+   ========================================================================== */
+.hero-banner-box {
+  width: 100%;
+  height: 350px;
+  background-color: #D1D5DB;
+  border: 2px dashed #1d2c59;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.hero-banner-box p {
+  font-weight: bold;
+  color: #1d2c59;
+  font-size: 20px;
+}
+
+.intro-container {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 1px solid #D1D5DB;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ==========================================================================
+   4. Wireframe Shaded Containers (#e1e5ee)
+   ========================================================================== */
+.gray-section-container {
+  background-color: #e1e5ee; /* Exact research palette color */
+  padding: 25px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+
+.white-card-box {
+  background-color: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  padding: 15px;
+  height: 100%;
+}
+
+.white-card-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   5. Call To Action Row Buttons
+   ========================================================================== */
+.cta-button {
+  display: block;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 12px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.btn-adoption { background-color: #1d2c59; }
+.btn-donation { background-color: #8ebc46; }
+.btn-report   { background-color: #a42037; }
+
+/* ==========================================================================
+   6. Form Element Layouts
+   ========================================================================== */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8ebc46; /* Styled border frame indicator */
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.form-textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #1d2c59;
+  color: #FFFFFF;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   7. Horizontal Table Fallback Cleaners
+   ========================================================================== */
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+}
+
+/* ==========================================================================
+   8. Footer Layout (3 Columns: Left, Center, Right)
+   ========================================================================== */
+footer {
+  background-color: #D1D5DB; /* Wireframe dark gray split bar */
+  color: #333333;
+  border-top: 2px solid #1d2c59;
+  padding: 20px 40px;
+  margin-top: 40px;
+}
+
+.footer-column {
+  float: left;
+  width: 33.33%;
+}
+
+.footer-column:nth-child(1) { text-align: left; }
+.footer-column:nth-child(2) { text-align: center; padding-top: 10px; }
+.footer-column:nth-child(3) { text-align: right; }
+
+footer ul { list-style-type: none; }
+footer ul li { margin-bottom: 5px; }
+
+footer h4 {
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}

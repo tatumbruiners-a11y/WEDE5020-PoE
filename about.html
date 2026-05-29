@@ -3,126 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPCA About Us</title>
+    <title>SPCA | About Us</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--HEADER-->
+
     <header>
-        <img src="images/spca-logo.png" alt="SPCA logo" width="100">
-        
+        <img src="images/spca-logo.png" alt="SPCA Logo" width="120">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="enquiry.html">Enquiries</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--ABOUT CONTENT-->
     <main>
-        <h1>About the SPCA</h1>
+        <!-- Top Split Section: Box Left, Texts Right -->
+        <table width="100%" cellspacing="20">
+            <tr>
+                <td width="40%" valign="top">
+                    <div class="hero-banner-box" style="height: 320px;">
+                        <p>[ Image Placeholder ]</p>
+                    </div>
+                </td>
+                <td width="60%" valign="top">
+                    <h3>HISTORY</h3>
+                    <p>The SPCA movement originally started in England in 1824 and eventually opened its very first operations in South Africa in 1872. Following this, the first official animal hospital opened in 1920. The organisation continuously evolved throughout the 19th and 20th centuries to protect pets, wildlife, and farm animals, and today proudly offers full veterinary, rescue, and education services.</p>
+                    
+                    <br>
+                    <h3>MISSION & VISION</h3>
+                    <p>Our core mission is to actively prevent cruelty and promote kindness towards animals through our various dedicated services. We strive daily to create a world where all animals are treated with respect and remain completely safe from harm.</p>
+                </td>
+            </tr>
+        </table>
 
-        <!-- Structural wrapper for the split history & media content layout -->
-        <div class="about-layout-container">
-            <table width="100%" cellpadding="10">
+        <!-- Core Focus Areas Content directly built from your criteria notes -->
+        <h3>OUR CORE FOCUS AREAS</h3>
+        <p>We work strictly to remove animals from states of neglect and abuse while educating communities on compassionate animal care. We provide essential medical care and sterilization, uphold established animal welfare laws, and ensure animals are fed and live freely without pain or fear.</p>
+
+        <hr>
+
+        <h2>OUR TEAM</h2>
+        <div class="gray-section-container">
+            <table width="100%" cellspacing="15">
                 <tr>
-                    <td width="60%" valign="top">
-                        <!-- BRIEF HISTORY -->
-                        <section>
-                            <h2>History and Role in South Africa</h2>
-                            <p>The SPCA started in England in 1824. It expanded globally and in 1872, opened in South Africa. The first hospital opened in 1920 and cared for pets, wildlife and farm animals. Today, the SPCA offers veterinary, rescue and education services.</p>
-                        </section>
-                        
-                        <!-- MISSION AND VISION -->
-                        <section>
-                            <h2>Mission and Vision</h2>
-                            <p>The SPCA's mission is to prevent cruelty and promote kindness towards animals. Our vision is to create a world where animals are treated with respect and are safe.</p>
-                            <p>We strive to remove animals from neglect and abuse, educate communities on compassionate animal care, provide medical care and sterilization, uphold animal laws and ensure animals are fed and live freely without pain or fear.</p>
-                        </section>
+                    <td width="50%">
+                        <div class="white-card-box" style="text-align: center;">
+                            <strong>CEO</strong>
+                            <p>Mqabuko Moyo Ndukwana</p>
+                            <p><small>Leads the organisation.</small></p>
+                        </div>
                     </td>
-                    <td width="40%" valign="middle">
-                        <img src="images/about.jpg" alt="Staff and animals" width="350">
+                    <td width="50%">
+                        <div class="white-card-box" style="text-align: center;">
+                            <strong>Manager, Wildlife Unit</strong>
+                            <p>Megan Reid</p>
+                            <p><small>Specializes in the protection, rescue, and welfare of animals.</small></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <div class="white-card-box" style="text-align: center;">
+                            <strong>Animal Welfare Assistant</strong>
+                            <p>Keagan Wolfaardt</p>
+                            <p><small>Provides primary animal health care and assists in our hospitals.</small></p>
+                        </div>
+                    </td>
+                    <td width="50%">
+                        <div class="white-card-box" style="text-align: center;">
+                            <strong>Chief Inspector</strong>
+                            <p>Jaco Pieterse</p>
+                            <p><small>Oversees investigations into animal cruelty and enforces animal welfare laws.</small></p>
+                        </div>
                     </td>
                 </tr>
             </table>
         </div>
-
-        <!--SPCA STAFF (Structured layout block matching image.png gray area)-->
-        <hr>
-        <section>
-            <h2>Meet Our Team</h2>
-            
-            <div class="team-grid-container">
-                <table width="100%" cellpadding="10">
-                    <tr>
-                        <td width="50%">
-                            <!-- Individual staff component wrapper card -->
-                            <div class="team-member-card">
-                                <img src="images/ceo.jpg" alt="Mqabuko Moyo Ndukwana" width="80">
-                                <p><strong>Mqabuko Moyo Ndukwana</strong><br>
-                                CEO: Leads the organisation</p>
-                            </div>
-                        </td>
-                        <td width="50%">
-                            <div class="team-member-card">
-                                <img src="images/megan.jpg" alt="Megan Reid" width="80">
-                                <p><strong>Megan Reid</strong><br>
-                                Wildlife Unit Manager: Specializes in protection, rescue and welfare of animals</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="50%">
-                            <div class="team-member-card">
-                                <img src="images/keegan.jpg" alt="Keagan Wolfaardt" width="80">
-                                <p><strong>Keagan Wolfaardt</strong><br>
-                                Animal Welfare Assistant: Provides primary animal health care and assists in hospitals</p>
-                            </div>
-                        </td>
-                        <td width="50%">
-                            <div class="team-member-card">
-                                <img src="images/jaco.jpg" alt="Jaco Pieterse" width="80">
-                                <p><strong>Jaco Pieterse</strong><br>
-                                Chief Inspector: Oversees investigation in animal cruelty and enforces animal welfare laws</p>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </section>
     </main>
 
-    <!--FOOTER-->
     <footer>
-        <div class="footer-container">
-            <section>
-                <ul>
-                    <li><img src="images/facebook.png" alt="Facebook icon" width="20">@NSPCA</li>
-                    <li><img src="images/instagram.png" alt="Instagram icon" width="20">@capespca</li>
-                </ul>
-            </section>
-            <section>
-                <p>&copy; 2026 SPCA South Africa. All Rights Reserved</p>
-            </section>
-            <section>
-                <h4>Emergency Contact</h4>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="images/telephone.png" alt="Emergency call icon" width="60">
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Local: 021 700 4140</li>
-                                <li>National: 011 907 3590</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </section>
+        <div class="footer-column">
+            <ul>
+                <li>Instagram - @capespca</li>
+                <li>Facebook - @NSPCA</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <p>SIMPLE LINKS</p>
+            <p>Terms, Privacy, Copyright &copy; 2026</p>
+        </div>
+        <div class="footer-column">
+            <h4>EMERGENCY CONTACT</h4>
+            <p>Local: 021 700 4140</p>
+            <p>National: 011 907 3590</p>
         </div>
     </footer>
 
