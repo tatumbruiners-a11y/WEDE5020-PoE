@@ -26,9 +26,17 @@
     <main>
         <h1 class="enq-main-title">Enquiry Form</h1>
         
-        <p class="enq-instructions">
-            <strong>Instructions:</strong> Please fill out the form below for adoption applications, donations and reporting cruelty. For information on <strong>Volunteering or Sponsorship</strong>, please select the options below.
-        </p>
+        <!-- Integrated Academic Research Instructions Notice Panel -->
+        <div class="enq-instructions" style="background-color: #e8ecf8; border-left: 5px solid #1d2c59; padding: 22px; border-radius: 4px; margin-bottom: 30px; text-align: left; box-sizing: border-box;">
+            <p style="margin-top: 0; font-size: 15px; color: #1d2c59; font-weight: bold;">
+                Form Submission Instructions & Essential Criteria:
+            </p>
+            <p style="font-size: 13px; color: #4A5568; line-height: 1.6; margin-bottom: 0;">
+                • <strong>Adoption Applications & Incident Reports:</strong> If you want to place an application for adoption or file a cruelty report, please read our dedicated <a href="services.html" style="color: #1d2c59; font-weight: bold; text-decoration: underline;">Services Page</a> first to ensure you supply all the necessary step-by-step information in your message summary below.<br><br>
+                • <strong>Volunteering Opportunities:</strong> If you want to become a volunteer, you must explicitly declare which activity you will help out with inside your message box (Activities include: <em>Dog walking, cat socialization, cleaning, or fundraising</em>) and note that you must attend a mandatory training session.<br><br>
+                • <strong>Sponsorship Packages (Monthly Donors):</strong> If you want to become a regular sponsor, you must be at least 18 years of age and maintain a stable income. Please fill out the form description below with your specific monthly contribution details.
+            </p>
+        </div>
 
         <div class="enq-form-container interactive-popup-card">
             <form action="#" method="POST">
@@ -62,7 +70,7 @@
 
                 <div class="enq-form-group">
                     <label for="message-content">Detailed Message / Incident Report Details</label>
-                    <textarea id="message-content" name="message_content" class="enq-input-control" rows="6" placeholder="Please type out details here..." required></textarea>
+                    <textarea id="message-content" name="message_content" class="enq-input-control" rows="6" placeholder="Please type out your details here based on the instructions above..." required></textarea>
                 </div>
 
                 <button type="submit" class="enq-submit-btn">Submit Form</button>
