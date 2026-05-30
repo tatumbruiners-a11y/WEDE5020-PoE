@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. Global Styles & Reset
-   ========================================================================== */
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -29,24 +27,22 @@ hr {
   margin: 40px 0;
 }
 
-/* ==========================================================================
-   2. Typography Hierarchy
-   ========================================================================== */
-h1, .hp-main-title, .ab-main-heading, .sv-main-title, .enq-main-title, .cn-main-title {
+/* Typography Styles */
+h1 {
   font-weight: 800;
   color: #1d2c59; 
   margin-bottom: 12px;
   text-align: center;
 }
 
-h2, .hp-subheading, .ab-sub-heading, .sv-card-title, .cn-branch-title {
+h2 {
   font-weight: 700;
   color: #1d2c59;
   margin-bottom: 8px;
   text-align: center;
 }
 
-h3, .ab-team-heading, .cn-emergency-title {
+h3 {
   font-weight: 700;
   color: #1d2c59;
   margin-bottom: 8px;
@@ -57,9 +53,7 @@ p, li, label, td {
   color: #4A5568;
 }
 
-/* ==========================================================================
-   3. Global Micro-Interactions (Pop-Up Cards)
-   ========================================================================== */
+/* Global Pop-Up Cards */
 .interactive-popup-card {
   background-color: #FFFFFF;
   border: 1px solid #E2E8F0;
@@ -76,9 +70,7 @@ p, li, label, td {
   box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
 }
 
-/* ==========================================================================
-   4. Header Styles
-   ========================================================================== */
+/* Header Styles */
 header {
   background-color: #e1e5ee; 
   padding: 15px 40px;
@@ -123,16 +115,14 @@ header::after {
   clear: both;
 }
 
-/* ==========================================================================
-   5. Homepage Specific Styles
-   ========================================================================== */
-.hp-images-container {
+/* Homepage Styles */
+.images-container {
   background-color: #e1e5ee; 
   padding: 15px;
   border-radius: 6px;
 }
 
-.hp-grid-img {
+.grid-img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -140,14 +130,14 @@ header::after {
   border-radius: 4px;
 }
 
-.hp-label-text {
+.label-text {
   font-weight: bold;
   color: #1d2c59;
   text-align: center;
   padding-top: 5px;
 }
 
-.hp-hero-image {
+.hero-image {
   width: 100%;
   height: auto;
   display: block;
@@ -155,18 +145,18 @@ header::after {
   border-radius: 4px;
 }
 
-.hp-intro-text {
+.intro-text {
   text-align: center;
   max-width: 850px;
   margin: 0 auto;
 }
 
-.hp-sub-text {
+.sub-text {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Homepage CTA Block Buttons */
+/* Homepage CTA Buttons */
 .hp-cta-box {
   display: block;
   text-align: center;
@@ -185,14 +175,12 @@ header::after {
   filter: brightness(95%);
 }
 
-.hp-btn-adopt  { background-color: #1d2c59; }
-.hp-btn-donate { background-color: #8ebc46; }
-.hp-btn-report { background-color: #a42037; }
+.adopt-btn  { background-color: #1d2c59; }
+.donate-btn { background-color: #8ebc46; }
+.report-btn { background-color: #a42037; }
 
-/* ==========================================================================
-   6. About Us Specific Styles
-   ========================================================================== */
-.ab-side-image {
+/* About Us Styles */
+.side-image {
   width: 100%;
   height: 100%;
   max-height: 640px;
@@ -201,13 +189,13 @@ header::after {
   border: 1px solid #D1D5DB;
 }
 
-.ab-team-container {
+.team-container {
   background-color: #e1e5ee;
   padding: 20px;
   border-radius: 6px;
 }
 
-.ab-profile-box {
+.profile-box {
   background-color: #FFFFFF;
   border: 1px solid #D1D5DB;
   padding: 8px;
@@ -216,14 +204,14 @@ header::after {
   height: 170px;
 }
 
-.ab-profile-box img {
+.profile-box img {
   width: 100%;
   height: 110px;
   object-fit: cover;
   border-radius: 2px;
 }
 
-.ab-profile-name {
+.profile-name {
   font-size: 11px;
   font-weight: bold;
   margin-top: 5px;
@@ -234,45 +222,41 @@ header::after {
   padding-left: 15px;
 }
 
-/* ==========================================================================
-   7. Services Specific Styles & 3D Flip Engine
-   ========================================================================== */
-.sv-intro-p { 
+/* Services Styles */
+.intro { 
   text-align: center; 
   max-width: 750px; 
   margin: 0 auto 30px auto; 
 }
 
-.sv-action-card {
+.action-card {
   border-radius: 8px;
-  padding: 0; /* Handled by front/back inner panels */
+  padding: 0; 
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-.sv-action-card img {
+.action-card img {
   height: 65px;
   width: auto;
   margin-bottom: 15px;
 }
 
-.sv-card-description {
+.card-description {
   margin-bottom: 20px;
 }
 
-.sv-interactive-trigger {
+.interactive-trigger {
   font-weight: bold;
   text-decoration: underline;
   text-transform: uppercase;
   font-size: 13px;
 }
 
-/* Brand Theme Color Blends */
-.sv-block-blue  { background-color: #e8ecf8; color: #1d2c59; }
-.sv-block-green { background-color: #f1f8e9; color: #3b521a; }
-.sv-block-red   { background-color: #fbebecef; color: #a42037; }
+.adopt-block  { background-color: #e8ecf8; color: #1d2c59; }
+.donate-block { background-color: #f1f8e9; color: #3b521a; }
+.report-block  { background-color: #fbebecef; color: #a42037; }
 
-/* 3D Flip Engine Configuration */
 .flip-card-container {
   perspective: 1000px; 
   height: 400px;       
@@ -312,7 +296,7 @@ header::after {
   align-items: center;
   top: 0;
   left: 0;
-  background-color: inherit; /* Inherits specific theme blocks backgrounds */
+  background-color: inherit; 
   border-radius: 8px;
 }
 
@@ -320,7 +304,7 @@ header::after {
   transform: rotateY(180deg);
 }
 
-.sv-steps-list {
+.steps-list {
   text-align: left;
   font-size: 13px;
   line-height: 1.5;
@@ -329,7 +313,7 @@ header::after {
   margin: 10px 0;
 }
 
-.sv-back-btn {
+.back-btn {
   display: inline-block;
   background-color: #1d2c59;
   color: #ffffff;
@@ -340,37 +324,35 @@ header::after {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: auto;
-  transition: background 0.2s ease;
+  transition: background-color 0.2s ease;
   border: none;
 }
 
-.sv-back-btn:hover {
+.back-btn:hover {
   background-color: #8ebc46;
   color: #ffffff;
 }
 
-/* ==========================================================================
-   8. Enquiry Page Specific Styles
-   ========================================================================== */
-.enq-instructions { 
+/* Enquiry Page Styles */
+.instructions { 
   text-align: center; 
   max-width: 800px; 
   margin: 0 auto 25px auto; 
 }
 
-.enq-form-group {
+.form-group {
   margin-bottom: 18px;
   text-align: left;
 }
 
-.enq-form-group label {
+.form-group label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
   color: #1d2c59;
 }
 
-.enq-input-control {
+.input-control {
   width: 100%;
   padding: 10px;
   border: 1px solid #D1D5DB;
@@ -378,12 +360,12 @@ header::after {
   font-size: 14px;
 }
 
-.enq-input-control:focus {
+.input-control:focus {
   border-color: #1d2c59;
   outline: none;
 }
 
-.enq-submit-btn {
+.submit-btn {
   background-color: #8ebc46;
   color: #FFFFFF;
   font-weight: bold;
@@ -397,29 +379,27 @@ header::after {
   transition: background-color 0.2s ease;
 }
 
-.enq-submit-btn:hover { 
+.submit-btn:hover { 
   background-color: #7aa53c; 
 }
 
-/* ==========================================================================
-   9. Contact Page Specific Styles
-   ========================================================================== */
-.cn-map-wrapper {
+/* Contact Page Styles */
+.map-wrapper {
   margin-bottom: 12px;
 }
 
-.cn-map-wrapper iframe {
+.map-wrapper iframe {
   width: 100%;
   max-width: 450px;
   border-radius: 4px;
 }
 
-.cn-details-p {
+.details-p {
   margin-bottom: 6px;
   text-align: left;
 }
 
-.cn-emergency-panel {
+.emergency-panel {
   background-color: #fbebecef;
   border-left: 5px solid #a42037;
   padding: 20px;
@@ -428,19 +408,17 @@ header::after {
   text-align: center;
 }
 
-.cn-emergency-title {
+.emergency-title {
   font-size: 18px;
   color: #a42037;
   margin-bottom: 8px;
 }
 
-.cn-emergency-subtext {
+.emergency-subtext {
   font-size: 15px;
 }
 
-/* ==========================================================================
-   10. Footer Styles
-   ========================================================================== */
+/* Footer Styles */
 footer {
   background-color: #e1e5ee;
   color: #333333;
@@ -499,9 +477,7 @@ footer::after {
   clear: both;
 }
 
-/* ==========================================================================
-   11. Academic Criteria Utilities
-   ========================================================================== */
+/* Dimmed Styles */
 .dimmed {
   opacity: 0.3;
   pointer-events: none; 
