@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPCA | Contact Us</title>
+    <title>SPCA South Africa | Contact Us</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- Header -->
     <header>
-        <img src="images/spca-logo.png" alt="SPCA Logo" width="120">
+        <img src="images/spca-logo.png" alt="SPCA logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,72 +22,78 @@
         </nav>
     </header>
 
+    <!-- Location Branches -->
     <main>
-        <h2>CONTACT PAGE</h2>
+        <h1 class="cn-main-title">Contact Us</h1>
 
-        <!-- Left/Right Columns for Location Maps and Branches -->
-        <table width="100%" cellspacing="20">
+        <table width="100%" cellspacing="0" cellpadding="20" style="table-layout: fixed;">
             <tr>
-                <!-- Cape Town Branch Left -->
-                <td width="50%" valign="top">
-                    <h3>LOCATION MAP (Left)</h3>
-                    <div class="hero-banner-box" style="height: 200px; margin-bottom: 15px;">
-                        <p>[ Cape Town Map Placeholder ]</p>
-                    </div>
-                    <h4>BRANCHES (Left)</h4>
-                    <div class="white-card-box">
-                        <strong>Cape Town Branch</strong>
-                        <p>Phone: 021 700 4140</p>
-                        <p>Email: info@capespca.co.za</p>
-                        <p>Address: 1st Ave & First Rd, Grassy Park, Cape Town, 8000</p>
+                <td width="50%" valign="top" style="border-right: 1px solid #D1D5DB;">
+                    <div class="interactive-popup-card" style="margin-right: 10px;">
+                        <h2 class="cn-branch-title">Cape Town Branch</h2>
+                        
+                        <div class="cn-map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.1201357583673!2d18.499464899999996!3d-34.0407893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc43c260414e3b%3A0x6ca22d0832851686!2sCape%20of%20Good%20Hope%20SPCA!5e0!3m2!1sen!2sza!4v1777547922615!5m2!1sen!2sza" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <p class="cn-details-p"><strong>Phone:</strong> 021 700 4140</p>
+                        <p class="cn-details-p"><strong>Email:</strong> info@capespca.org.za</p>
+                        <p class="cn-details-p"><strong>Address:</strong> 1st Ave & First Rd, Grassy Park, Cape Town</p>
                     </div>
                 </td>
 
-                <!-- Johannesburg Branch Right -->
                 <td width="50%" valign="top">
-                    <h3>LOCATION MAP (Right)</h3>
-                    <div class="hero-banner-box" style="height: 200px; margin-bottom: 15px;">
-                        <p>[ Johannesburg Map Placeholder ]</p>
-                    </div>
-                    <h4>BRANCHES (Right)</h4>
-                    <div class="white-card-box">
-                        <strong>Johannesburg Branch</strong>
-                        <p>Phone: 011 681 3600</p>
-                        <p>Email: pr@jhbspca.co.za</p>
-                        <p>Address: 5 Benray Rd, Reuven, Johannesburg, 2091</p>
+                    <div class="interactive-popup-card" style="margin-left: 10px;">
+                        <h2 class="cn-branch-title">Johannesburg Branch</h2>
+                        
+                        <div class="cn-map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.798744117019!2d28.0297055!3d-26.235728099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950eda944f9ca1%3A0x5dfaeb664c3f49f!2sJohannesburg%20Society%20for%20the%20Prevention%20of%20Cruelty%20to%20Animals!5e0!3m2!1sen!2sza!4v1777548044613!5m2!1sen!2sza" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <p class="cn-details-p"><strong>Phone:</strong> 011 681 3600</p>
+                        <p class="cn-details-p"><strong>Email:</strong> pr@jhbspca.co.za</p>
+                        <p class="cn-details-p"><strong>Address:</strong> 5 Benray Rd, Reuven, Johannesburg</p>
                     </div>
                 </td>
             </tr>
         </table>
 
-        <br>
-
-        <!-- Full Width Emergency Highlight Block as designated in wireframe -->
-        <div class="gray-section-container" style="border-left: 6px solid #a42037; background-color: #FFFFFF;">
-            <h3>EMERGENCY CONTACT</h3>
-            <p><strong>Cases of Emergency:</strong> Please contact the Cape of Good Hope SPCA 24-hour Inspectorate at <strong>021 700 4158</strong> for any injured or distressed animals immediately.</p>
-            <p>For after-hour emergency scenarios, contact <strong>083 326 1604</strong>. For any national emergencies, contact the NSPCA office at <strong>011 907 3590</strong>.</p>
-            <p style="color: #a42037; font-weight: bold; margin-top: 10px;">
-                * Do not use social media for immediate, life-threatening animal emergencies.
+        <!-- Emergency Numbers -->
+        <div class="cn-emergency-panel">
+            <h3 class="cn-emergency-title"><strong>Emergency Contact</strong></h3>
+            <p class="cn-emergency-subtext"><strong>For animal emergencies, please call:</strong></p>
+            <p class="cn-emergency-subtext" style="margin-top: 8px; font-size: 16px;">
+                <strong>021 700 4158</strong> (Local) | <strong>011 907 3590</strong> (National) | <strong>083 326 1604</strong> (After-Hours)
             </p>
         </div>
     </main>
 
+    <!-- Foooter -->
     <footer>
         <div class="footer-column">
-            <ul>
-                <li>Instagram - @capespca</li>
-                <li>Facebook - @NSPCA</li>
-            </ul>
+            <div class="footer-social-row">
+                <img src="images/instagram.png" alt="Instagram" width="20">@capespca
+            </div>
+            <div class="footer-social-row">
+                <img src="images/facebook.png" alt="Facebook" width="20">@NSPCA
+            </div>
         </div>
         <div class="footer-column">
-            <p>SIMPLE LINKS</p>
-            <p>Terms, Privacy, Copyright &copy; 2026</p>
+            <p>&copy; 2026 SPCA South Africa. All Rights Reserved.</p>
         </div>
         <div class="footer-column">
-            <h4>EMERGENCY CONTACT</h4>
-            <p>Local: 021 700 4140</p>
-            <p>National: 011 907 3590</p>
+            <h4><strong>Emergency contact</strong></h4>
+            <table class="footer-emergency-table">
+                <tr>
+                    <td><img src="images/telephone.png" alt="Emergency" width="40"></td>
+                    <td>
+                        <ul class="footer-numbers-list">
+                            <li>Local: 021 700 4140</li>
+                            <li>National: 011 907 3590</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
         </div>
     </footer>
 
