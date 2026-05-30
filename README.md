@@ -19,9 +19,23 @@ The website consists of five main pages: Home, About Us, Services, Enquiry Form 
 
 Colour Palette
 
+The website focused on soft tones of red, green, blue and grey. Red was used for reports and emergencies, green for donations, blue for adoption and grey for text. Darker shades of blue was used for headings and navigation. A light blue background was used to keep the design simple.
+![colour-palette](images/colour-palette.jpg)
+
 Typography Specifications
 
+A simple sans-serif font stack consisting of Segoe UI and Arial was used because it is easy to read across different devices. Headings was enlarged and made bold to make them stand out, while normal text was used for content. Line height was set to 1.4 to keep text compact and readable. Different font sizes helped to separate headings from body text.
+![typography](images/typography.JPG)
+
 Website Pages Across Devices
+
+![mobile](images/mobile1.jpg)
+![mobile](images/mobile2.jpg)
+Mobile
+![desktop](images/desk1.jpg)
+![desktop](images/desk2.jpg)
+![desktop](images/desk4.png)
+Desktop
 
 Part 1 Features
 
@@ -41,45 +55,45 @@ Changelog
 
 29 April 2026 – Project Setup
 
-Initial project structure created with folders and base HTML files
-Added navigation across all pages
-Renamed and organised image assets
-Added consistent header and footer to all pages
+- Initial project structure created with folders and base HTML files
+- Added navigation across all pages
+- Renamed and organised image assets
+- Added consistent header and footer to all pages
 
 30 April 2026 – Content Development
 
-Completed homepage, about page, services page, enquiry page and contact page content
-Embedded Google Maps on contact page
-Uploaded project proposal and research documentation
-Expanded README with sitemap and timeline
+- Completed homepage, about page, services page, enquiry page and contact page content
+- Embedded Google Maps on contact page
+- Uploaded project proposal and research documentation
+- Expanded README with sitemap and timeline
 
 25 May 2026 – Styling Preparation & Layout Work
 
-Added structural div containers across pages
-Linked external CSS stylesheet to all pages
-Updated layout structure and improved page organisation
+- Added structural div containers across pages
+- Linked external CSS stylesheet to all pages
+- Updated layout structure and improved page organisation
 
 29 May 2026 – Layout Refinement & Styling Updates
 
-Applied multiple CSS refinements to improve structure and alignment
-Uploaded unzipped research documents
+- Applied multiple CSS refinements to improve structure and alignment
+- Uploaded unzipped research documents
 
 30 May 2026 – Final Styling & Content Finalisation
 
-Finalised homepage by updating content and incorporating CSS styling
-Finalised about page by updating content to match global CSS styles
-Finalised services page by updating content to match global CSS styles
-Finalised enquiry page by updating content to match global CSS styles
-Finalised contact page by updating content to match global CSS styles
-Finalised overall CSS styling across all project pages
-Added emergency contact information to site layout
-Expanded enquiry page with additional instructions and user guidance
-Added interactive service cards with hover/flip effects
-Updated CSS to support interactive card animations
-Refined layout structure and improved visual consistency
-Updated ReadMe Files
-Uploaded updated proposal and research documents
-Completed final testing, debugging and responsiveness checks
+- Finalised homepage by updating content and incorporating CSS styling
+- Finalised about page by updating content to match global CSS styles
+- Finalised services page by updating content to match global CSS styles
+- Finalised enquiry page by updating content to match global CSS styles
+- Finalised contact page by updating content to match global CSS styles
+- Finalised overall CSS styling across all project pages
+- Added emergency contact information to site layout
+- Expanded enquiry page with additional instructions and user guidance
+- Added interactive service cards with hover/flip effects
+- Updated CSS to support interactive card animations
+- Refined layout structure and improved visual consistency
+- Uploaded updated proposal and research documents
+- Added new images to files
+- Updated Changelog and ReadMe files
 
 References
 
@@ -157,19 +171,19 @@ Sumbission Summary
 
 This submission includes:
 
-Website Project Proposals
-Content Research and Sourcing
-Project overview
-Website goals and objectives
-Key functions and functionality
-Colour palette
-Typography specifications
-Website pages across devices
-Part 1 and Part 2 feature summaries
-Sitemap
-Timeline and milestones
-Changelog and development history
-Source code for all pages
-Full reference list used throughout the project
+- Website Project Proposals
+- Content Research and Sourcing
+- Project overview
+- Website goals and objectives
+- Key functions and functionality
+- Colour palette
+- Typography specifications
+- Website pages across devices
+- Part 1 and Part 2 features
+- Sitemap
+- Timeline and milestones
+- Changelog and development history
+- Source code for all pages
+- Full reference list used throughout the project
 
 Further development (JavaScript functionality) will be implemented in Part 3.
