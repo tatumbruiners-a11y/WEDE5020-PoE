@@ -1,4 +1,6 @@
-/* General Styles */
+/* ==========================================================================
+   1. Global Styles & Reset
+   ========================================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +29,9 @@ hr {
   margin: 40px 0;
 }
 
-/* Typography Hierarchy */
+/* ==========================================================================
+   2. Typography Hierarchy
+   ========================================================================== */
 h1, .hp-main-title, .ab-main-heading, .sv-main-title, .enq-main-title, .cn-main-title {
   font-weight: 800;
   color: #1d2c59; 
@@ -53,7 +57,9 @@ p, li, label, td {
   color: #4A5568;
 }
 
-/* Pop-Up Cards */
+/* ==========================================================================
+   3. Global Micro-Interactions (Pop-Up Cards)
+   ========================================================================== */
 .interactive-popup-card {
   background-color: #FFFFFF;
   border: 1px solid #E2E8F0;
@@ -70,7 +76,9 @@ p, li, label, td {
   box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
 }
 
-/* Header Styles */
+/* ==========================================================================
+   4. Header Styles
+   ========================================================================== */
 header {
   background-color: #e1e5ee; 
   padding: 15px 40px;
@@ -115,7 +123,9 @@ header::after {
   clear: both;
 }
 
-/* Image Styles  */
+/* ==========================================================================
+   5. Homepage Specific Styles
+   ========================================================================== */
 .hp-images-container {
   background-color: #e1e5ee; 
   padding: 15px;
@@ -156,7 +166,7 @@ header::after {
   margin-bottom: 20px;
 }
 
-/* Call to Action Buttons */
+/* Homepage CTA Block Buttons */
 .hp-cta-box {
   display: block;
   text-align: center;
@@ -179,7 +189,9 @@ header::after {
 .hp-btn-donate { background-color: #8ebc46; }
 .hp-btn-report { background-color: #a42037; }
 
-/* About Us */
+/* ==========================================================================
+   6. About Us Specific Styles
+   ========================================================================== */
 .ab-side-image {
   width: 100%;
   height: 100%;
@@ -222,30 +234,20 @@ header::after {
   padding-left: 15px;
 }
 
-/* Services */
+/* ==========================================================================
+   7. Services Specific Styles & 3D Flip Engine
+   ========================================================================== */
 .sv-intro-p { 
   text-align: center; 
   max-width: 750px; 
   margin: 0 auto 30px auto; 
 }
 
-.sv-action-link {
-  text-decoration: none;
-  display: block;
-}
-
 .sv-action-card {
   border-radius: 8px;
-  padding: 30px 20px;
+  padding: 0; /* Handled by front/back inner panels */
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.04);
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), 
-              box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sv-action-link:hover .sv-action-card {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
 .sv-action-card img {
@@ -265,11 +267,91 @@ header::after {
   font-size: 13px;
 }
 
+/* Brand Theme Color Blends */
 .sv-block-blue  { background-color: #e8ecf8; color: #1d2c59; }
 .sv-block-green { background-color: #f1f8e9; color: #3b521a; }
 .sv-block-red   { background-color: #fbebecef; color: #a42037; }
 
-/* Enquiry Page */
+/* 3D Flip Engine Configuration */
+.flip-card-container {
+  perspective: 1000px; 
+  height: 400px;       
+}
+
+.flip-toggle {
+  display: none; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  cursor: pointer;
+  display: block;
+  margin: 0;
+}
+
+.flip-toggle:checked + .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: inherit; /* Inherits specific theme blocks backgrounds */
+  border-radius: 8px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.sv-steps-list {
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #4A5568;
+  padding-left: 18px;
+  margin: 10px 0;
+}
+
+.sv-back-btn {
+  display: inline-block;
+  background-color: #1d2c59;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: auto;
+  transition: background 0.2s ease;
+  border: none;
+}
+
+.sv-back-btn:hover {
+  background-color: #8ebc46;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   8. Enquiry Page Specific Styles
+   ========================================================================== */
 .enq-instructions { 
   text-align: center; 
   max-width: 800px; 
@@ -319,7 +401,9 @@ header::after {
   background-color: #7aa53c; 
 }
 
-/* Contact Page */
+/* ==========================================================================
+   9. Contact Page Specific Styles
+   ========================================================================== */
 .cn-map-wrapper {
   margin-bottom: 12px;
 }
@@ -354,7 +438,9 @@ header::after {
   font-size: 15px;
 }
 
-/* Footer Styles */
+/* ==========================================================================
+   10. Footer Styles
+   ========================================================================== */
 footer {
   background-color: #e1e5ee;
   color: #333333;
@@ -413,7 +499,9 @@ footer::after {
   clear: both;
 }
 
-/* Header and Footer */
+/* ==========================================================================
+   11. Academic Criteria Utilities
+   ========================================================================== */
 .dimmed {
   opacity: 0.3;
   pointer-events: none; 
