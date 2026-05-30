@@ -24,56 +24,53 @@
 
     <!-- Enquiry Form -->
     <main>
-        <h1 class="enq-main-title">Enquiry Form</h1>
+        <h1>Enquiry Form</h1>
         
-        <!-- Integrated Academic Research Instructions Notice Panel -->
-        <div class="enq-instructions" style="background-color: #e8ecf8; border-left: 5px solid #1d2c59; padding: 22px; border-radius: 4px; margin-bottom: 30px; text-align: left; box-sizing: border-box;">
+        <!-- Instructions -->
+        <div class="instructions" style="background-color: #e8ecf8; border-left: 5px solid #1d2c59; padding: 22px; border-radius: 4px; margin-bottom: 30px; text-align: left; box-sizing: border-box;">
             <p style="margin-top: 0; font-size: 15px; color: #1d2c59; font-weight: bold;">
-                Form Submission Instructions & Essential Criteria:
+                Instructions:
             </p>
             <p style="font-size: 13px; color: #4A5568; line-height: 1.6; margin-bottom: 0;">
-                • <strong>Adoption Applications & Incident Reports:</strong> If you want to place an application for adoption or file a cruelty report, please read our dedicated <a href="services.html" style="color: #1d2c59; font-weight: bold; text-decoration: underline;">Services Page</a> first to ensure you supply all the necessary step-by-step information in your message summary below.<br><br>
-                • <strong>Volunteering Opportunities:</strong> If you want to become a volunteer, you must explicitly declare which activity you will help out with inside your message box (Activities include: <em>Dog walking, cat socialization, cleaning, or fundraising</em>) and note that you must attend a mandatory training session.<br><br>
+                • <strong>Adoption Applications, Incident Reports & Donations:</strong> Please refer to our <a href="services.html" style="color: #1d2c59; font-weight: bold; text-decoration: underline;">Services</a> to ensure you supply all the necessary information in your message below.<br><br>
+                • <strong>Volunteering Opportunities:</strong> If you want to become a volunteer, you must state which activity you will help out with inside your message (Activities include: <em>Dog walking, cat socialization, cleaning, or fundraising</em>) and note that you must attend a mandatory training session.<br><br>
                 • <strong>Sponsorship Packages (Monthly Donors):</strong> If you want to become a regular sponsor, you must be at least 18 years of age and maintain a stable income. Please fill out the form description below with your specific monthly contribution details.
             </p>
         </div>
 
-        <div class="enq-form-container interactive-popup-card">
+        <div class="form-container interactive-popup-card">
             <form action="#" method="POST">
                 
-                <div class="enq-form-group">
+                <div class="form-group">
                     <label for="enquiry-type">Enquiry Type</label>
-                    <select id="enquiry-type" name="enquiry_type" class="enq-input-control" required>
+                    <select id="enquiry-type" name="enquiry_type" class="input-control" required>
                         <option value="">-- Please Select An Option --</option>
                         <option value="adoption">Adoption Application</option>
-                        <option value="donation">Donation Support</option>
+                        <option value="donation">Donation</option>
                         <option value="cruelty">Reporting Cruelty / Abuse</option>
-                        <option value="volunteering">Volunteering Opportunities</option>
-                        <option value="sponsorship">Sponsorship Packages</option>
+                        <option value="volunteering">Volunteering</option>
+                        <option value="sponsorship">Sponsorship</option>
                     </select>
                 </div>
 
-                <div class="enq-form-group">
+                <div class="form-group">
                     <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full_name" class="enq-input-control" placeholder="Enter your first and last name" required>
+                    <input type="text" id="full-name" name="full_name" class="input-control" placeholder="Enter your first and last name" required>
                 </div>
-
-                <div class="enq-form-group">
+                <div class="form-group">
                     <label for="email-address">Email Address</label>
-                    <input type="email" id="email-address" name="email_address" class="enq-input-control" placeholder="example@domain.com" required>
+                    <input type="email" id="email-address" name="email_address" class="input-control" placeholder="example@domain.com" required>
                 </div>
-
-                <div class="enq-form-group">
+                <div class="form-group">
                     <label for="phone-number">Contact Number</label>
-                    <input type="tel" id="phone-number" name="phone_number" class="enq-input-control" placeholder="e.g. 0217004140" required>
+                    <input type="tel" id="phone-number" name="phone_number" class="input-control" placeholder="e.g. 0217004140" required>
                 </div>
-
-                <div class="enq-form-group">
+                <div class="form-group">
                     <label for="message-content">Detailed Message / Incident Report Details</label>
-                    <textarea id="message-content" name="message_content" class="enq-input-control" rows="6" placeholder="Please type out your details here based on the instructions above..." required></textarea>
+                    <textarea id="message-content" name="message_content" class="input-control" rows="6" placeholder="Please type out your details here based on the instructions above..." required></textarea>
                 </div>
 
-                <button type="submit" class="enq-submit-btn">Submit Form</button>
+                <button type="submit" class="submit-btn">Submit Form</button>
 
             </form>
         </div>
@@ -93,7 +90,7 @@
             <p>&copy; 2026 SPCA South Africa. All Rights Reserved.</p>
         </div>
         <div class="footer-column">
-            <h4><strong>Emergency contact</strong></h4>
+            <h4><strong>Emergency Contact</strong></h4>
             <table class="footer-emergency-table">
                 <tr>
                     <td><img src="images/telephone.png" alt="Emergency" width="40"></td>
