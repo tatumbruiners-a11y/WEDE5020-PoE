@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPCA South Africa | Our Services</title>
-    <link class="styles" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -26,49 +26,96 @@
     <!-- Services -->
     <main>
         <h1 class="sv-main-title">Our Services</h1>
-        <p class="sv-intro-p">
-            The SPCA offers a wide range of services to protect animals and support the community. Select a service below to take action.
+        <p class="sv-intro-p" style="text-align: center; margin-bottom: 30px; color: #4A5568;">
+            The SPCA offers a wide range of services to protect animals and support the community. **Click any card below** to flip it and view the specific steps required to take action.
         </p>
 
         <table width="100%" cellspacing="20" cellpadding="0" style="table-layout: fixed;">
             <tr>
+                <!-- ================= ADOPTION CARD ================= -->
                 <td width="33.33%" valign="top">
-                    <a href="enquiry.html" class="sv-action-link">
-                        <div class="sv-action-card sv-block-blue">
-                            <img src="images/adoption.png" alt="Adoption icon">
-                            <h2>Adoption</h2>
-                            <p class="sv-card-description">
-                                For responsible individuals (18+) looking for a long-term commitment. We provide animals with safe and loving homes.
-                            </p>
-                            <span class="sv-interactive-trigger">Fill out Adoption Form</span>
-                        </div>
-                    </a>
+                    <div class="flip-card-container">
+                        <input type="checkbox" id="flip-adopt" class="flip-toggle">
+                        <label for="flip-adopt" class="sv-action-card sv-block-blue flip-card-inner interactive-popup-card">
+                            <!-- Front of Card -->
+                            <div class="card-front">
+                                <img src="images/adoption.png" alt="Adoption icon">
+                                <h2>Adoption</h2>
+                                <p class="sv-card-description">
+                                    For responsible individuals (18+) looking for a long-term commitment. We provide animals with safe and loving homes.
+                                </p>
+                                <span class="sv-interactive-trigger" style="font-weight: bold; color: #1d2c59;">➔ Click to View Steps</span>
+                            </div>
+                            <!-- Back of Card -->
+                            <div class="card-back">
+                                <h2 style="margin-top: 0;">Steps to Adopt</h2>
+                                <ol class="sv-steps-list">
+                                    <li>Meet the animal in person.</li>
+                                    <li>Complete application with ID and proof of residence.</li>
+                                    <li>Follow a mandatory home inspection.</li>
+                                    <li>Once approved, sign the contract and collect your pet.</li>
+                                </ol>
+                                <a href="enquiry.html" class="sv-back-btn">Go to Enquiry Form</a>
+                            </div>
+                        </label>
+                    </div>
                 </td>
 
+                <!-- ================= DONATIONS CARD ================= -->
                 <td width="33.33%" valign="top">
-                    <a href="enquiry.html" class="sv-action-link">
-                        <div class="sv-action-card sv-block-green">
-                            <img src="images/donate.png" alt="Donations icon">
-                            <h2>Donations</h2>
-                            <p class="sv-card-description">
-                                As a non-profit, we rely on your support to cover costs for food, blankets, surgeries and maintenance of shelters.
-                            </p>
-                            <span class="sv-interactive-trigger">Support our Mission</span>
-                        </div>
-                    </a>
+                    <div class="flip-card-container">
+                        <input type="checkbox" id="flip-donate" class="flip-toggle">
+                        <label for="flip-donate" class="sv-action-card sv-block-green flip-card-inner interactive-popup-card">
+                            <!-- Front of Card -->
+                            <div class="card-front">
+                                <img src="images/donate.png" alt="Donations icon">
+                                <h2>Donations</h2>
+                                <p class="sv-card-description">
+                                    As a non-profit, we rely on your support to cover costs for food, blankets, surgeries and maintenance of shelters.
+                                </p>
+                                <span class="sv-interactive-trigger" style="font-weight: bold; color: #8ebc46;">➔ Click to View Steps</span>
+                            </div>
+                            <!-- Back of Card -->
+                            <div class="card-back">
+                                <h2 style="margin-top: 0;">Steps to Donate</h2>
+                                <ol class="sv-steps-list">
+                                    <li>Choose your preferred method of payment online.</li>
+                                    <li>Select where your money flows (kennels, surgeries, etc.).</li>
+                                    <li>Drop off physical goods (clothes, toys, food) directly at your nearest local branch.</li>
+                                </ol>
+                                <a href="enquiry.html" class="sv-back-btn">Go to Enquiry Form</a>
+                            </div>
+                        </label>
+                    </div>
                 </td>
 
+                <!-- ================= REPORT CARD ================= -->
                 <td width="33.33%" valign="top">
-                    <a href="enquiry.html" class="sv-action-link">
-                        <div class="sv-action-card sv-block-red">
-                            <img src="images/rescue.png" alt="Rescue icon">
-                            <h2>Report</h2>
-                            <p class="sv-card-description">
-                                Any person who finds stray animals or witnesses animal abuse, neglect or endangerment, please reach out to help save the lives of animals.
-                            </p>
-                            <span class="sv-interactive-trigger">Report an Incident</span>
-                        </div>
-                    </a>
+                    <div class="flip-card-container">
+                        <input type="checkbox" id="flip-report" class="flip-toggle">
+                        <label for="flip-report" class="sv-action-card sv-block-red flip-card-inner interactive-popup-card">
+                            <!-- Front of Card -->
+                            <div class="card-front">
+                                <img src="images/rescue.png" alt="Rescue icon">
+                                <h2>Report</h2>
+                                <p class="sv-card-description">
+                                    Any person who finds stray animals or witnesses animal abuse, neglect or endangerment, please reach out to help save the lives of animals.
+                                </p>
+                                <span class="sv-interactive-trigger" style="font-weight: bold; color: #a42037;">➔ Click to View Steps</span>
+                            </div>
+                            <!-- Back of Card -->
+                            <div class="card-back">
+                                <h2 style="margin-top: 0;">Steps to Report</h2>
+                                <ol class="sv-steps-list">
+                                    <li>Locate your nearest physical operational branch.</li>
+                                    <li>Safely document the scene with photos or videos, exact time, and the address.</li>
+                                    <li>Contact the local branch immediately for urgent emergencies.</li>
+                                    <li>Report confidently and provide a formal written statement.</li>
+                                </ol>
+                                <a href="enquiry.html" class="sv-back-btn">Go to Enquiry Form</a>
+                            </div>
+                        </label>
+                    </div>
                 </td>
             </tr>
         </table>
