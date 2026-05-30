@@ -1,4 +1,4 @@
-# WEDE5020-PoE
+WEDE5020-PoE
 
 Module: WEDE5020 – Web Development (Introduction)
 Student Name: Tatum Bruiners
@@ -7,42 +7,29 @@ Group: 1
 
 Project Overview
 
-This project focuses on the design and development of a functional and user-friendly website for the Society for the Prevention of Cruelty to Animals (SPCA). The website aims to provide users with clear information about the organisation, as well as allow them to take action through adoption, donations and reporting animal cruelty.
-
-The website has been developed using HTML and managed through GitHub as part of Part 1 of the project and follows a structured layout with multiple interconnected web pages. 
+This project forms part of the WEDE5020 Web Development module and focuses on the design and development of a responsive website for the Society for the Prevention of Cruelty to Animals (SPCA). The purpose of the website is to provide users with easy access to information about animal welfare, adoptions, donations and reporting animal cruelty. The project is completed in phases. Part 1 focuses on planning, research, content gathering, website structure and HTML development. Part 2 focuses on visual design through CSS styling, user experience improvements and responsive design for different screen sizes. Throughout development, GitHub is used for version control, documentation and project management. The website aims to provide a simple and user-friendly experience that encourages meaningful user actions while supporting the SPCA's mission of protecting and caring for animals.
 
 Website Goals and Objectives
 
-Goals
-
-Make it easy for users to take action (adopt, donate, report animal cruelty)
-Educate users about animal welfare and responsible pet ownership
-Increase awareness of the SPCA and its services
-
-Objectives
-
-Increase the number of online donations
-Encourage more adoption applications
-Increase the number of animal abuse reports
-Improve user interaction with the organisation
-
-Key Performance Indicators (KPIs)
-
-Number of monthly website visitors
-Number of adoption applications
-Number of donations made online
-Number of reported animal welfare cases
-Average time spent on the website
+The primary goal of the website is to encourage users to support the SPCA through adoptions, donations, reporting animal cruelty, volunteering or sponsorship. The website also serves as an educational platform that promotes responsible pet ownership and animal welfare awareness. Success will be measured through user engagement, adoption enquiries, donation activity and increased accessibility of SPCA services.
 
 Key Features and Functionality
 
-Homepage with introduction, call-to-action buttons and featured pets.
-About Us page with organisation history, mission, vision and team members.
-Services page covering adoption, donations and reporting.
-Enquiry page with a structured form for user interaction.
-Contact page with multiple branch locations and emergency details.
-Navigation menu available across all pages
-Header and footer implemented consistently across the website
+The website consists of five main pages: Home, About Us, Services, Enquiry Form and Contact. Together these pages provide visitors with information about the SPCA, its mission, services and available ways to support animal welfare initiatives. Clear navigation is implemented across all pages to ensure users can easily find information and complete important actions. Key user actions include learning about the organisation, viewing available services, submitting enquiries, volunteering, donating and reporting animal cruelty. The website has been designed using HTML and CSS and follows responsive design principles to ensure accessibility across desktop, tablet and mobile devices. JavaScript functionality will be implemented in later phases of development. A clean layout, structured content sections and colour-coded action areas help improve usability and user experience.
+
+Colour Palette
+
+Typography Specifications
+
+Website Pages Across Devices
+
+Part 1 Features
+
+Part 1 focused on project planning and website development foundations. This included researching organisations, selecting the SPCA as the target organisation, creating and submitting project proposals, gathering and evaluating website content, planning the website structure and sitemap and developing the initial HTML pages. During this phase, a GitHub repository was created to manage project files, version control and ongoing documentation while ensuring all submission requirements were met.
+
+Part 2 Features
+
+Part 2 focused on improving the visual appearance and usability of the website through CSS styling and responsive design. Feedback received from Part 1 was incorporated into the project and a consistent colour palette, typography system, navigation styling, content cards, buttons and page layouts were implemented. Responsive techniques such as media queries, flexible layouts and relative sizing were applied to ensure the website displays correctly across desktop, tablet and mobile devices. GitHub continued to be used for version control, testing updates and maintaining project documentation.
 
 Sitemap
 ![sitemap](images/sitemap.png)
@@ -52,22 +39,47 @@ Timeline and Milestones
 
 Changelog
 
-29 April 2026
+29 April 2026 – Project Setup
 
-Initial commit
-Initial project structure created (folders and HTML files)
-Navigation added to all pages
-Header and footer implemented across all pages
-Image files renamed
+Initial project structure created with folders and base HTML files
+Added navigation across all pages
+Renamed and organised image assets
+Added consistent header and footer to all pages
 
-30 April 2026
+30 April 2026 – Content Development
 
-Homepage completed with content
-About Us page completed
-Services page completed
-Enquiry page completed
-Contact page completed with maps
-Proposal and research documents uploaded
+Completed homepage, about page, services page, enquiry page and contact page content
+Embedded Google Maps on contact page
+Uploaded project proposal and research documentation
+Expanded README with sitemap and timeline
+
+25 May 2026 – Styling Preparation & Layout Work
+
+Added structural div containers across pages
+Linked external CSS stylesheet to all pages
+Updated layout structure and improved page organisation
+
+29 May 2026 – Layout Refinement & Styling Updates
+
+Applied multiple CSS refinements to improve structure and alignment
+Uploaded unzipped research documents
+
+30 May 2026 – Final Styling & Content Finalisation
+
+Finalised homepage by updating content and incorporating CSS styling
+Finalised about page by updating content to match global CSS styles
+Finalised services page by updating content to match global CSS styles
+Finalised enquiry page by updating content to match global CSS styles
+Finalised contact page by updating content to match global CSS styles
+Finalised overall CSS styling across all project pages
+Added emergency contact information to site layout
+Expanded enquiry page with additional instructions and user guidance
+Added interactive service cards with hover/flip effects
+Updated CSS to support interactive card animations
+Refined layout structure and improved visual consistency
+Updated ReadMe Files
+Uploaded updated proposal and research documents
+Completed final testing, debugging and responsiveness checks
 
 References
 
@@ -141,13 +153,23 @@ Web.MIT. (n.d.) Safe web fonts. Available at: https://web.mit.edu/jmorzins/www/f
 
 Wikipedia Contributors. (2026) Society for the Prevention of Cruelty to Animals. Available at: https://en.wikipedia.org/wiki/Society_for_the_Prevention_of_Cruelty_to_Animals (Accessed: 19 April 2026).
 
-Part 1 Details
+Sumbission Summary
 
 This submission includes:
 
-Website Project Proposal
+Website Project Proposals
 Content Research and Sourcing
-Initial HTML website structure
-GitHub repository with version control and commits
+Project overview
+Website goals and objectives
+Key functions and functionality
+Colour palette
+Typography specifications
+Website pages across devices
+Part 1 and Part 2 feature summaries
+Sitemap
+Timeline and milestones
+Changelog and development history
+Source code for all pages
+Full reference list used throughout the project
 
-Further development (CSS styling and JavaScript functionality) will be completed in Part 2 and Part 3.
+Further development (JavaScript functionality) will be implemented in Part 3.
