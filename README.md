@@ -20,21 +20,21 @@ The website consists of five main pages: Home, About Us, Services, Enquiry Form 
 Colour Palette
 
 The website focused on soft tones of red, green, blue and grey. Red was used for reports and emergencies, green for donations, blue for adoption and grey for text. Darker shades of blue was used for headings and navigation. A light blue background was used to keep the design simple.
-![colour-palette](images/colour-palette.jpg)
+<img src="images/colour-palette.jpg" alt="colour-palette" width="400">
 
 Typography Specifications
 
 A simple sans-serif font stack consisting of Segoe UI and Arial was used because it is easy to read across different devices. Headings was enlarged and made bold to make them stand out, while normal text was used for content. Line height was set to 1.4 to keep text compact and readable. Different font sizes helped to separate headings from body text.
-![typography](images/typography.JPG)
+<img src="images/typography.JPG" alt="typography" width="400">
 
 Website Pages Across Devices
 
-![mobile](images/mobile1.jpg)
-![mobile](images/mobile2.jpg)
+<img src="images/mobile1.jpg" alt="mobile 1" width="250">
+<img src="images/mobile2.jpg" alt="mobile 2" width="250">
 Mobile
-![desktop](images/desk1.jpg)
-![desktop](images/desk2.jpg)
-![desktop](images/desk4.png)
+<img src="images/desk1.jpg" alt="desktop 1" width="400">
+<img src="images/desk2.jpg" alt="desktop 2" width="400">
+<img src="images/desk4.png" alt="desktop 4" width="400">
 Desktop
 
 Part 1 Features
@@ -46,10 +46,10 @@ Part 2 Features
 Part 2 focused on improving the visual appearance and usability of the website through CSS styling and responsive design. Feedback received from Part 1 was incorporated into the project and a consistent colour palette, typography system, navigation styling, content cards, buttons and page layouts were implemented. Responsive techniques such as media queries, flexible layouts and relative sizing were applied to ensure the website displays correctly across desktop, tablet and mobile devices. GitHub continued to be used for version control, testing updates and maintaining project documentation.
 
 Sitemap
-![sitemap](images/sitemap.png)
+<img src="images/sitemap.png" alt="sitemap" width="400">
 
 Timeline and Milestones
-![timeline](images/timeline.png)
+<img src="images/timeline.png" alt="timeline" width="400">
 
 Changelog
 
