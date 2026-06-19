@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPCA South Africa | Home</title>
+    
+    <title>SPCA South Africa | Official Home | Animal Rescue & Care</title>
+    <meta name="description" content="Welcome to SPCA South Africa. We are dedicated to rescuing, protecting, and caring for domestic pets, farm animals, and wildlife across South Africa.">
+    <meta name="keywords" content="SPCA South Africa, animal welfare, pet adoption, donate to SPCA, report animal cruelty, Cape Town, Johannesburg">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header and Navigation -->
+    <!--Header and Navigation-->
     <header>
-        <img src="images/spca-logo.png" alt="SPCA logo">
+        <img src="images/spca-logo.png" alt="Official logo for SPCA South Africa">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="enquiry.html">Enquiries</a></li>
@@ -22,28 +26,30 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
+    <!--Main Content-->
     <main>
-        <img src="images/hero-image.jpg" alt="Various SPCA Animals" class="hero-image">
+        <img src="images/hero-image.jpg" alt="A collage of animals dealt with at the SPCA" class="hero-image" loading="eager" fetchpriority="high">
+        
         <h1>The Society for the Prevention of Cruelty to Animals (SPCA)</h1>
 
+        <!--Brief Introduction-->
         <div class="interactive-popup-card intro-text">
-            <p style="text-align: center;">
+            <p>
                 The SPCA is a non-profit organisation dedicated to rescuing, caring and protecting animals. Our aim is to educate the public on responsible pet ownership, give a second chance to animals in need and provide them with safe homes.
             </p>
         </div>
 
-        <!-- Call to Action -->
-        <div>
+        <!--Call to Action Buttons-->
+        <div class="responsive-table-wrapper">
             <table width="100%" cellspacing="15">
-                <tr>
-                    <td width="33%">
+                <tr class="contact-branches-row">
+                    <td width="33%" class="responsive-td">
                         <a href="services.html" class="hp-cta-box adopt-btn">Adopt a Pet</a>
                     </td>
-                    <td width="33%">
+                    <td width="33%" class="responsive-td">
                         <a href="services.html" class="hp-cta-box donate-btn">Donate Now</a>
                     </td>
-                    <td width="33%">
+                    <td width="33%" class="responsive-td">
                         <a href="services.html" class="hp-cta-box report-btn">Report Abuse</a>
                     </td>
                 </tr>
@@ -52,58 +58,64 @@
 
         <hr>
 
-        <!-- Sub-header Section -->
+        <!--SPCA Animals-->
         <h2>Who We Help</h2>
-        <p class="sub-text">The SPCA works with a diverse range of animals across different environments:</p>
+        <p class="sub-text">
+            The SPCA works with a diverse range of animals across different environments. <strong>Click on any image to view an expanded view:</strong>
+        </p>
 
-        <div class="images-container">
+        <div class="responsive-table-wrapper images-container">
             <table width="100%" cellspacing="10">
-                <tr>
-                    <td width="33%">
-                        <img src="images/pets.jpg" alt="Domestic Pets" class="grid-img">
+                <tr class="contact-branches-row">
+                    <td width="33%" class="responsive-td">
+                        <img src="images/pets.jpg" alt="Domestic Pets - Rescued puppies and kittens awaiting adoption" class="grid-img gallery-thumb">
+                        <p class="label-text">Domestic Pets</p>
                     </td>
-                    <td width="33%">
-                        <img src="images/sheep.jpg" alt="Farm Animals" class="grid-img">
+                    <td width="33%" class="responsive-td">
+                        <img src="images/sheep.jpg" alt="Farm Animals - Livestock rehabilitated from neglectful rural settings" class="grid-img gallery-thumb">
+                        <p class="label-text">Farm Animals</p>
                     </td>
-                    <td width="33%">
-                        <img src="images/wild.jpg" alt="Wildlife Species" class="grid-img">
+                    <td width="33%" class="responsive-td">
+                        <img src="images/wild.jpg" alt="Wildlife Species - Protected wild animals receiving medical care" class="grid-img gallery-thumb">
+                        <p class="label-text">Wildlife Species</p>
                     </td>
-                </tr>
-                <tr>
-                    <td><p class="label-text">Domestic Pets</p></td>
-                    <td><p class="label-text">Farm Animals</p></td>
-                    <td><p class="label-text">Wildlife Species</p></td>
                 </tr>
             </table>
         </div>
+
+        <div id="lightboxModal" class="lightbox-modal">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightboxTargetImg" alt="Expanded pop-up view">
+            <div id="lightboxCaption"></div>
+        </div>
     </main>
 
-    <!-- Footer -->
+    <!--Footer-->
     <footer>
         <div class="footer-column">
             <div class="footer-social-row">
-                <img src="images/instagram.png" alt="Instagram" width="20">@capespca
+                <a href="https://www.instagram.com/capespca?igsh=dno3Znc3M2NmZGMx" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                    <img src="images/instagram.png" alt="Visit our official Instagram profile" width="20"> @capespca
+                </a>
             </div>
             <div class="footer-social-row">
-                <img src="images/facebook.png" alt="Facebook" width="20">@NSPCA
+                <a href="https://www.facebook.com/NSPCA" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                    <img src="images/facebook.png" alt="Visit our official Facebook page" width="20"> @NSPCA
+                </a>
             </div>
         </div>
-        
         <div class="footer-column">
             <p>&copy; 2026 SPCA South Africa. All Rights Reserved.</p>
         </div>
-        
         <div class="footer-column">
             <h4><strong>Emergency Contact</strong></h4>
             <table class="footer-emergency-table">
                 <tr>
-                    <td>
-                        <img src="images/telephone.png" alt="Emergency" width="40">
-                    </td>
+                    <td><img src="images/telephone.png" alt="Emergency Call Hotline" width="40"></td>
                     <td>
                         <ul class="footer-numbers-list">
-                            <li>Local: 021 700 4140</li>
-                            <li>National: 011 907 3590</li>
+                            <li>Local: <a href="tel:0217004140" style="color: inherit;">021 700 4140</a></li>
+                            <li>National: <a href="tel:0119073590" style="color: inherit;">011 907 3590</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -111,5 +123,6 @@
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
