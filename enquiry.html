@@ -3,46 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPCA South Africa | Enquiry Form</title>
+    
+    <title>Submit an Enquiry | SPCA South Africa Application Portal</title>
+    <meta name="description" content="Submit a digital enquiry to the SPCA. Use our interactive portal to log adoption applications, place a donation, report cruelty safely, sign up for volunteer or sponsorship services.">
+    <meta name="keywords" content="SPCA enquiry form, animal rescue intake, volunteer application, sponsor SPCA, adoption form application">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!--Header and Navigation-->
     <header>
-        <img src="images/spca-logo.png" alt="SPCA logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="enquiry.html">Enquiries</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img src="images/spca-logo.png" class="logo" alt="Official logo for SPCA South Africa">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html" class="active">Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Enquiry Form -->
+    <!--Enquiry Form-->
     <main>
         <h1>Enquiry Form</h1>
         
-        <!-- Instructions -->
-        <div class="instructions" style="background-color: #e8ecf8; border-left: 5px solid #1d2c59; padding: 22px; border-radius: 4px; margin-bottom: 30px; text-align: left; box-sizing: border-box;">
-            <p style="margin-top: 0; font-size: 15px; color: #1d2c59; font-weight: bold;">
+        <!--Instrucions-->
+        <div class="instructions-panel">
+            <p class="instruction-heading">
                 Instructions:
             </p>
-            <p style="font-size: 13px; color: #4A5568; line-height: 1.6; margin-bottom: 0;">
-                • <strong>Adoption Applications, Incident Reports & Donations:</strong> Please refer to our <a href="services.html" style="color: #1d2c59; font-weight: bold; text-decoration: underline;">Services</a> to ensure you supply all the necessary information in your message below.<br><br>
+            <p class="instruction-body">
+                • <strong>Adoption Applications, Incident Reports & Donations:</strong> Please refer to our <a href="services.html" class="instruction-link">Services</a> to ensure you supply all the necessary information in your message below.<br><br>
                 • <strong>Volunteering Opportunities:</strong> If you want to become a volunteer, you must state which activity you will help out with inside your message (Activities include: <em>Dog walking, cat socialization, cleaning, or fundraising</em>) and note that you must attend a mandatory training session.<br><br>
                 • <strong>Sponsorship Packages (Monthly Donors):</strong> If you want to become a regular sponsor, you must be at least 18 years of age and maintain a stable income. Please fill out the form description below with your specific monthly contribution details.
             </p>
         </div>
 
         <div class="form-container interactive-popup-card">
-            <form action="#" method="POST">
+            
+            <div id="enquiryAlertBox" style="display: none; padding: 15px; margin-bottom: 20px; border-radius: 4px; font-weight: bold; text-align: left;"></div>
+            
+            <form id="spcaEnquiryForm" action="#" method="POST" novalidate>
                 
+                <!--Enquiry Type-->
                 <div class="form-group">
-                    <label for="enquiry-type">Enquiry Type</label>
+                    <label for="enquiry-type">Enquiry Type *</label>
                     <select id="enquiry-type" name="enquiry_type" class="input-control" required>
                         <option value="">-- Please Select An Option --</option>
                         <option value="adoption">Adoption Application</option>
@@ -53,20 +63,27 @@
                     </select>
                 </div>
 
+                <!--Full Name-->
                 <div class="form-group">
-                    <label for="full-name">Full Name</label>
+                    <label for="full-name">Full Name *</label>
                     <input type="text" id="full-name" name="full_name" class="input-control" placeholder="Enter your first and last name" required>
                 </div>
+
+                <!--Email Address-->
                 <div class="form-group">
-                    <label for="email-address">Email Address</label>
+                    <label for="email-address">Email Address *</label>
                     <input type="email" id="email-address" name="email_address" class="input-control" placeholder="example@domain.com" required>
                 </div>
+
+                <!--Contact Number-->
                 <div class="form-group">
-                    <label for="phone-number">Contact Number</label>
+                    <label for="phone-number">Contact Number *</label>
                     <input type="tel" id="phone-number" name="phone_number" class="input-control" placeholder="e.g. 0217004140" required>
                 </div>
+
+                <!--Detailed Message/ Report Details-->
                 <div class="form-group">
-                    <label for="message-content">Detailed Message / Incident Report Details</label>
+                    <label for="message-content">Detailed Message / Incident Report Details *</label>
                     <textarea id="message-content" name="message_content" class="input-control" rows="6" placeholder="Please type out your details here based on the instructions above..." required></textarea>
                 </div>
 
@@ -76,34 +93,47 @@
         </div>
     </main>
 
-    <!-- Footer -->
+    <!--Footer-->
     <footer>
-        <div class="footer-column">
-            <div class="footer-social-row">
-                <img src="images/instagram.png" alt="Instagram" width="20">@capespca
+        <div class="footer-container">
+            
+            <div class="footer-column social-links">
+                <div class="footer-social-row">
+                    <a href="https://www.instagram.com/capespca" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                        <img src="images/instagram.png" alt="Visit the Cape of Good Hope SPCA Instagram page" width="20"> @capespca
+                    </a>
+                </div>
+                <div class="footer-social-row">
+                    <a href="https://www.facebook.com/NSPCA" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                        <img src="images/facebook.png" alt="Visit the National Council of SPCAs Facebook page" width="20"> @NSPCA
+                    </a>
+                </div>
             </div>
-            <div class="footer-social-row">
-                <img src="images/facebook.png" alt="Facebook" width="20">@NSPCA
+            
+            <div class="footer-column copyright">
+                <p>&copy; 2026 SPCA South Africa. All Rights Reserved.</p>
             </div>
-        </div>
-        <div class="footer-column">
-            <p>&copy; 2026 SPCA South Africa. All Rights Reserved.</p>
-        </div>
-        <div class="footer-column">
-            <h4><strong>Emergency Contact</strong></h4>
-            <table class="footer-emergency-table">
-                <tr>
-                    <td><img src="images/telephone.png" alt="Emergency" width="40"></td>
-                    <td>
-                        <ul class="footer-numbers-list">
-                            <li>Local: 021 700 4140</li>
-                            <li>National: 011 907 3590</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+            
+            <div class="footer-column emergency">
+                <h4><strong>Emergency Contact</strong></h4>
+                <table class="footer-emergency-table">
+                    <tr>
+                        <td>
+                            <img src="images/telephone.png" alt="Emergency Telephone Hotline Icon" width="40" style="margin-right: 10px;">
+                        </td>
+                        <td>
+                            <ul class="footer-numbers-list">
+                                <li>Local: <a href="tel:0217004140" style="color: inherit; text-decoration: none; font-weight: bold;">021 700 4140</a></li>
+                                <li>National: <a href="tel:0119073590" style="color: inherit; text-decoration: none; font-weight: bold;">011 907 3590</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
