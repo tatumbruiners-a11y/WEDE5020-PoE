@@ -3,119 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Our Services | SPCA South Africa | Pet Adoption, Donations & Rescue</title>
-    <meta name="description" content="Explore SPCA South Africa's primary community services. Learn about our strict pet adoption protocols, physical or monetary donation flows, and emergency rescue reporting.">
-    <meta name="keywords" content="SPCA services, adopt a dog, pet donation steps, report animal abuse hotline, animal shelters South Africa">
-    
+    <meta name="description" content="Explore the services provided by SPCA, including detailed adoption paths, charitable donation options and cruelty reporting structures.">
+    <meta name="keywords" content="SPCA, South Africa, animal shelter, adopt a pet, donate, report animal cruelty, community services">
+    <title>SPCA South Africa | Our Services</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!--Header and Navigation-->
     <header>
-        <img src="images/spca-logo.png" alt="Official logo for SPCA South Africa">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="enquiry.html">Enquiries</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img src="images/spca-logo.png" class="logo" alt="Official logo for SPCA South Africa">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="enquiry.html">Enquiries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!--Services-->
     <main>
         <h1>Our Services</h1>
-        <p class="intro-text">
+        <p class="sub-text">
             The SPCA offers a wide range of services to protect animals and support the community. Click on any card below to view the necessary steps to take action.
         </p>
 
-        <div class="search-container">
-            <input type="text" id="servicesSearchBox" placeholder="Search for a service (e.g., Adoption, Donate)...">
+        <!--Search Bar-->
+        <div class="search-input-wrapper">
+            <input type="text" id="serviceSearch" placeholder="Search for a service...">
         </div>
 
-        <div class="services-grid-wrapper">
+        <div class="services-grid">
             
             <!--Adoption-->
-            <div class="service-card-cell">
-                <div class="flip-card-container">
-                    <input type="checkbox" id="flip-adopt" class="flip-toggle">
-                    <label for="flip-adopt" class="action-card adopt-block flip-card-inner interactive-popup-card">
-                        <div class="card-front">
-                            <img src="images/adoption.png" alt="Pet Adoption and Placement Icon">
-                            <h2>Adoption</h2>
-                            <p class="card-description">
-                                For responsible individuals (18+) looking for a long-term commitment. We provide animals with safe and loving homes.
-                            </p>
-                            <span class="interactive-trigger trigger-adopt">➔ Click to View Steps</span>
-                        </div>
-                        <div class="card-back">
-                            <h2>Steps to Adopt</h2>
-                            <ol class="steps-list">
-                                <li>Meet the animal in person.</li>
-                                <li>Complete application with ID and proof of residence.</li>
-                                <li>Follow a mandatory home inspection.</li>
-                                <li>Once approved, sign the contract and collect your pet.</li>
-                            </ol>
-                            <a href="enquiry.html" class="back-btn">Adopt Now</a>
-                        </div>
-                    </label>
-                </div>
+            <div class="flip-card-container service-cell">
+                <input type="checkbox" id="flip-adopt" class="flip-toggle">
+                <label for="flip-adopt" class="action-card adopt-block flip-card-inner">
+                    <div class="card-front">
+                        <img src="images/adoption.png" alt="Adoption icon">
+                        <h2>Adoption</h2>
+                        <p class="card-description">
+                            For responsible individuals (18+) looking for a long-term commitment. We provide animals with safe and loving homes.
+                        </p>
+                        <span class="interactive-trigger">➔ Click to View Steps</span>
+                    </div>
+                    <div class="card-back">
+                        <h2>Steps to Adopt</h2>
+                        <ol class="steps-list">
+                            <li>Meet the animal in person.</li>
+                            <li>Complete application with ID and proof of residence.</li>
+                            <li>Follow a mandatory home inspection.</li>
+                            <li>Once approved, sign the contract and collect your pet.</li>
+                        </ol>
+                        <a href="enquiry.html" class="back-btn">Adopt Now</a>
+                    </div>
+                </label>
             </div>
-            
-            <!--Donations-->
-            <div class="service-card-cell">
-                <div class="flip-card-container">
-                    <input type="checkbox" id="flip-donate" class="flip-toggle">
-                    <label for="flip-donate" class="action-card donate-block flip-card-inner interactive-popup-card">
-                        <div class="card-front">
-                            <img src="images/donate.png" alt="Charitable Contributions and Donations Icon">
-                            <h2>Donations</h2>
-                            <p class="card-description">
-                                As a non-profit, we rely on your support to cover costs for food, blankets, surgeries and maintenance of shelters.
-                            </p>
-                            <span class="interactive-trigger trigger-donate">➔ Click to View Steps</span>
-                        </div>
-                        <div class="card-back">
-                            <h2>Steps to Donate</h2>
-                            <ol class="steps-list">
-                                <li>Select your preferred method of payment.</li>
-                                <li>Decide where your money should flow towards (kennels, surgeries, etc.).</li>
-                                <li>Drop off physical goods (clothes, toys, food) at your nearest branch.</li>
-                            </ol>
-                            <a href="enquiry.html" class="back-btn">Donate Now</a>
-                        </div>
-                    </label>
-                </div>
+
+            <!--Donation-->
+            <div class="flip-card-container service-cell">
+                <input type="checkbox" id="flip-donate" class="flip-toggle">
+                <label for="flip-donate" class="action-card donate-block flip-card-inner">
+                    <div class="card-front">
+                        <img src="images/donate.png" alt="Donations icon">
+                        <h2>Donations</h2>
+                        <p class="card-description">
+                            As a non-profit, we rely on your support to cover costs for food, blankets, surgeries and maintenance of shelters.
+                        </p>
+                        <span class="interactive-trigger">➔ Click to View Steps</span>
+                    </div>
+                    <div class="card-back">
+                        <h2>Steps to Donate</h2>
+                        <ol class="steps-list">
+                            <li>Select your preferred method of payment.</li>
+                            <li>Decide where your money should flow towards (kennels, surgeries, etc.).</li>
+                            <li>Drop off physical goods (clothes, toys, food) at your nearest branch.</li>
+                        </ol>
+                        <a href="enquiry.html" class="back-btn">Donate Now</a>
+                    </div>
+                </label>
             </div>
-            
-            <!--Report-->
-            <div class="service-card-cell">
-                <div class="flip-card-container">
-                    <input type="checkbox" id="flip-report" class="flip-toggle">
-                    <label for="flip-report" class="action-card report-block flip-card-inner interactive-popup-card">
-                        <div class="card-front">
-                            <img src="images/rescue.png" alt="Emergency Rescue and Abuse Reporting Icon">
-                            <h2>Report</h2>
-                            <p class="card-description">
-                                Any person who finds stray animals or witnesses animal abuse, neglect or endangerment, please reach out to help save the lives of animals.
-                            </p>
-                            <span class="interactive-trigger trigger-report">➔ Click to View Steps</span>
-                        </div>
-                        <div class="card-back">
-                            <h2>Steps to Report</h2>
-                            <ol class="steps-list">
-                                <li>Contact the local or national hotline immediately for urgent emergencies.</li>
-                                <li>Safely document the scene with photos or videos, exact time and the address.</li>
-                                <li>Provide a formal written statement.</li>
-                            </ol>
-                            <a href="enquiry.html" class="back-btn">Report Now</a>
-                        </div>
-                    </label>
-                </div>
+
+            <!--Reports-->
+            <div class="flip-card-container service-cell">
+                <input type="checkbox" id="flip-report" class="flip-toggle">
+                <label for="flip-report" class="action-card report-block flip-card-inner">
+                    <div class="card-front">
+                        <img src="images/rescue.png" alt="Rescue icon">
+                        <h2>Report</h2>
+                        <p class="card-description">
+                            Any person who finds stray animals or witnesses animal abuse, neglect or endangerment, please reach out to help save the lives of animals.
+                        </p>
+                        <span class="interactive-trigger">➔ Click to View Steps</span>
+                    </div>
+                    <div class="card-back">
+                        <h2>Steps to Report</h2>
+                        <ol class="steps-list">
+                            <li>Contact the local or national hotline immediately for urgent emergencies.</li>
+                            <li>Safely document the scene with photos or videos, exact time and the address.</li>
+                            <li>Provide a formal written statement.</li>
+                        </ol>
+                        <a href="enquiry.html" class="back-btn">Report Now</a>
+                    </div>
+                </label>
             </div>
 
         </div>
@@ -123,30 +118,42 @@
 
     <!--Footer-->
     <footer>
-        <div class="footer-column">
-            <div class="footer-social-row">
-                <a href="https://www.instagram.com/capespca?igsh=dno3Znc3M2NmZGMx" target="_blank" rel="noopener noreferrer">
-                    <img src="images/instagram.png" alt="Visit our official Instagram profile" width="20"> @capespca
-                </a>
+        <div class="footer-container">
+            
+            <div class="footer-column social-links">
+                <div class="footer-social-row">
+                    <a href="https://www.instagram.com/capespca" target="_blank" rel="noopener noreferrer" class="footer-link-reset footer-social-anchor">
+                        <img src="images/instagram.png" alt="Visit the Cape of Good Hope SPCA Instagram page" width="20"> @capespca
+                    </a>
+                </div>
+                <div class="footer-social-row">
+                    <a href="https://www.facebook.com/NSPCA" target="_blank" rel="noopener noreferrer" class="footer-link-reset footer-social-anchor">
+                        <img src="images/facebook.png" alt="Visit the National Council of SPCAs Facebook page" width="20"> @NSPCA
+                    </a>
+                </div>
             </div>
-            <div class="footer-social-row">
-                <a href="https://www.facebook.com/NSPCA" target="_blank" rel="noopener noreferrer">
-                    <img src="images/facebook.png" alt="Visit our official Facebook community page" width="20"> @NSPCA
-                </a>
+            
+            <div class="footer-column copyright">
+                <p>&copy; 2026 SPCA South Africa. All Rights Reserved.</p>
             </div>
-        </div>
-        <div class="footer-column">
-            <p>&copy; 2026 SPCA South Africa. All Rights Reserved.</p>
-        </div>
-        <div class="footer-column">
-            <h4><strong>Emergency Contact</strong></h4>
-            <div class="footer-emergency-container">
-                <img src="images/telephone.png" alt="Emergency Call Hotline" width="40">
-                <ul class="footer-numbers-list">
-                    <li>Local: <a href="tel:0217004140">021 700 4140</a></li>
-                    <li>National: <a href="tel:0119073590">011 907 3590</a></li>
-                </ul>
+            
+            <div class="footer-column emergency">
+                <h4><strong>Emergency Contact</strong></h4>
+                <table class="footer-emergency-table">
+                    <tr>
+                        <td>
+                            <img src="images/telephone.png" class="footer-phone-icon" alt="Emergency Telephone Hotline Icon" width="40">
+                        </td>
+                        <td>
+                            <ul class="footer-numbers-list">
+                                <li>Local: <a href="tel:0217004140" class="footer-link-reset footer-tel-anchor">021 700 4140</a></li>
+                                <li>National: <a href="tel:0119073590" class="footer-link-reset footer-tel-anchor">011 907 3590</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </div>
+
         </div>
     </footer>
 
