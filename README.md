@@ -7,7 +7,7 @@ Group: 1
 
 Project Overview
 
-This project forms part of the WEDE5020 Web Development module and focuses on the design and development of a responsive website for the Society for the Prevention of Cruelty to Animals (SPCA). The purpose of the website is to provide users with easy access to information about animal welfare, adoptions, donations and reporting animal cruelty. The project is completed in phases. Part 1 focuses on planning, research, content gathering, website structure and HTML development. Part 2 focuses on visual design through CSS styling, user experience improvements and responsive design for different screen sizes. Throughout development, GitHub is used for version control, documentation and project management. The website aims to provide a simple and user-friendly experience that encourages meaningful user actions while supporting the SPCA's mission of protecting and caring for animals.
+This project forms part of the WEDE5020 Web Development module and focuses on the design and development of a responsive website for the Society for the Prevention of Cruelty to Animals (SPCA). The purpose of the website is to provide users with easy access to information about animal welfare, adoptions, donations and reporting animal cruelty. The project is completed in phases. Part 1 focuses on planning, research, content gathering, website structure and HTML development. Part 2 focuses on visual design through CSS styling, user experience improvements and responsive design for different screen sizes. Part 3 focuses on implementing JavaScript functionality, form validation and search engine optimization. Throughout development, GitHub is used for version control, documentation and project management. The website aims to provide a simple and user-friendly experience that encourages meaningful user actions while supporting the SPCA's mission of protecting and caring for animals.
 
 Website Goals and Objectives
 
@@ -15,7 +15,7 @@ The primary goal of the website is to encourage users to support the SPCA throug
 
 Key Features and Functionality
 
-The website consists of five main pages: Home, About Us, Services, Enquiry Form and Contact. Together these pages provide visitors with information about the SPCA, its mission, services and available ways to support animal welfare initiatives. Clear navigation is implemented across all pages to ensure users can easily find information and complete important actions. Key user actions include learning about the organisation, viewing available services, submitting enquiries, volunteering, donating and reporting animal cruelty. The website has been designed using HTML and CSS and follows responsive design principles to ensure accessibility across desktop, tablet and mobile devices. JavaScript functionality will be implemented in later phases of development. A clean layout, structured content sections and colour-coded action areas help improve usability and user experience.
+The website consists of five main pages: Home, About Us, Services, Enquiry Form and Contact. Together these pages provide visitors with information about the SPCA, its mission, services and available ways to support animal welfare initiatives. Clear navigation is implemented across all pages to ensure users can easily find information and complete important actions. Key user actions include learning about the organisation, viewing available services, submitting enquiries, volunteering, donating and reporting animal cruelty. The website has been designed using HTML and CSS and follows responsive design principles to ensure accessibility across desktop, tablet and mobile devices. JavaScript functionality has been implemented to handle form validation and interactive elements. A clean layout, structured content sections and colour-coded action areas help improve usability and user experience.
 
 Colour Palette
 
@@ -55,6 +55,10 @@ Part 2 Features
 
 Part 2 focused on improving the visual appearance and usability of the website through CSS styling and responsive design. Feedback received from Part 1 was incorporated into the project and a consistent colour palette, typography system, navigation styling, content cards, buttons and page layouts were implemented. Responsive techniques such as media queries, flexible layouts and relative sizing were applied to ensure the website displays correctly across desktop, tablet and mobile devices. GitHub continued to be used for version control, testing updates and maintaining project documentation.
 
+Part 3 Features
+
+Part 3 focused on adding interactivity and technical optimization. This included implementing JavaScript for client-side form validation on the Enquiry page to ensure data integrity, adding dynamic UI elements and finalizing SEO configurations. Specifically, a robots.txt file and a sitemap.xml were developed and integrated into the repository to ensure search engine crawlers can index the site effectively.
+
 Sitemap
 <img src="images/sitemap.png" alt="sitemap" width="400">
 
@@ -90,11 +94,7 @@ Changelog
 
 30 May 2026 – Final Styling & Content Finalisation
 
-- Finalised homepage by updating content and incorporating CSS styling
-- Finalised about page by updating content to match global CSS styles
-- Finalised services page by updating content to match global CSS styles
-- Finalised enquiry page by updating content to match global CSS styles
-- Finalised contact page by updating content to match global CSS styles
+- Finalised homepage, about, services, enquiry, and contact page content to match global CSS styles
 - Finalised overall CSS styling across all project pages
 - Added emergency contact information to site layout
 - Expanded enquiry page with additional instructions and user guidance
@@ -104,6 +104,16 @@ Changelog
 - Uploaded updated proposal and research documents
 - Added new images to files
 - Updated Changelog and ReadMe files
+
+19 June 2026 – Part 3: Interactivity and SEO Optimization
+
+- Developed JavaScript validation script to enforce required fields and format checks on the Enquiry form
+- Debugged form submission flow to ensure user feedback upon success
+- Created sitemap.xml listing all site pages with priority and change frequency metadata
+- Authored robots.txt file to define crawler access paths and map file location
+- Verified case-sensitivity compliance for deployment URLs (tatumbruiners-A11y)
+- Conducted final cross-browser responsiveness testing for mobile, tablet, and desktop
+- Finalized repository documentation and ensured all commit messages were descriptive and aligned with project phases
 
 References
 
@@ -189,11 +199,9 @@ This submission includes:
 - Colour palette
 - Typography specifications
 - Website pages across devices
-- Part 1 and Part 2 features
+- Part 1, Part 2, and Part 3 features
 - Sitemap
 - Timeline and milestones
 - Changelog and development history
 - Source code for all pages
 - Full reference list used throughout the project
-
-Further development (JavaScript functionality) will be implemented in Part 3.
