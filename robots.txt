@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Direct link to your live sitemap file
+Sitemap: https://tatumbruiners-A11y.github.io/WEDE5020-PoE/sitemap.xml
